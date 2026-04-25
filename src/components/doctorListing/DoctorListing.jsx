@@ -1,0 +1,44 @@
+import React from "react";
+import { Container, Row } from 'react-bootstrap'
+import styles from './doctorListing.module.scss'
+import DoctorCard from "./DoctorCard";
+
+export default function DoctorListing({ data }) {
+
+    return (
+        <>
+            <div className={`${styles.inPersonWrapper}`}>
+                <div className={styles.listingWrapper}>
+                    <Container>
+                        <Row>
+                            <div className={styles.verifiedByGetz}>
+                                <div className={styles.count}>
+                                    <h4><span>233</span> Doctors listed</h4>
+                                </div>
+                                <div className={styles.count}>
+                                    <h4>
+                                        <span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                <g clip-path="url(#clip0_295_11094)">
+                                                    <path d="M23 12L20.56 9.21L20.9 5.52L17.29 4.7L15.4 1.5L12 2.96L8.6 1.5L6.71 4.69L3.1 5.5L3.44 9.2L1 12L3.44 14.79L3.1 18.49L6.71 19.31L8.6 22.5L12 21.03L15.4 22.49L17.29 19.3L20.9 18.48L20.56 14.79L23 12ZM10.09 16.72L6.29 12.91L7.77 11.43L10.09 13.76L15.94 7.89L17.42 9.37L10.09 16.72Z" fill="#77AA42" />
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_295_11094">
+                                                        <rect width="24" height="24" fill="white" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                        </span>
+                                        Verified by Getz Pharma</h4>
+                                </div>
+                            </div>
+                        </Row>
+                        <Row>
+                            <DoctorCard />
+                        </Row>
+                    </Container>
+                </div>
+            </div>
+        </>
+    )
+}

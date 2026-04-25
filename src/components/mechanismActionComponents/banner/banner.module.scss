@@ -1,0 +1,406 @@
+.wraper_arrow_top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 18px;
+  padding-top: 18px;
+  padding-right: 22px;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(20px);
+  transition: all 0.4s ease-in-out;
+  z-index: 1000;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #222;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px !important;
+  width: 60px !important;
+  height: 60px !important;
+  cursor: pointer;
+
+  @media (min-width: 0px) and (max-width: 768px) {
+    background-color: #b3b3b3;
+  }
+
+  &.showBtnArrow {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    height: fit-content;
+    bottom: 4%;
+  }
+
+  .arrowUpSvg {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cg clip-path='url(%23clip0_3377_222)'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M13.6684 20.4315L13.6684 8.2315L19.5337 13.8315L21 12.4315L12.621 4.4315L4.24202 12.4315L5.70834 13.8315L11.5736 8.2315L11.5736 20.4315L13.6684 20.4315Z' fill='white'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_3377_222'%3E%3Crect width='24' height='24' fill='white' transform='translate(24 1.04907e-06) rotate(90)'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: block;
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.mainWrapperBanner {
+  width: 100%;
+  height: 610px;
+  // background-image: url("../../../assets/images/png/mechanismBG.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  margin-top: 110px;
+
+  @media (max-width: 768px) {
+    height: 400px;
+  }
+}
+
+/* ---------- Banner Box ---------- */
+.box_banner_bottom {
+  width: 100%;
+  height: 610px;
+  border-radius: 120px 0 0 0;
+  background: linear-gradient(
+    99deg,
+    rgba(20, 81, 54, 0.75) 0%,
+    rgba(40, 94, 36, 0.75) 100%
+  );
+  backdrop-filter: blur(20px);
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 35px;
+  padding: clamp(24px, 5vw, 70px);
+
+  /* ---------- MOBILE ONLY ---------- */
+  @media (max-width: 768px) {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 90%;
+    height: 250px;
+    padding: 20px;
+  }
+}
+
+/* ---------- Text ---------- */
+.banner_title {
+  color: #fff;
+  font-family: "Inter", sans-serif;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 80%;
+
+  @media (max-width: 768px) {
+    font-size: 22px;
+    line-height: 1.3;
+  }
+}
+.banner_description {
+  color: #fff;
+  font-family: "Inter", sans-serif;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  width: 80%;
+
+  @media (max-width: 768px) {
+    font-size: 22px;
+    line-height: 1.3;
+  }
+}
+
+
+
+/* ==========================================
+   BANNER & SCROLL ARROW RESPONSIVE
+   ========================================== */
+
+// 1. LAPTOP FIX (1025px - 1300px)
+@media (max-width: 1300px) and (min-width: 1025px) {
+  .mainWrapperBanner {
+    height: 500px; // Reduced from 610px
+  }
+
+  .box_banner_bottom {
+    height: 500px;
+    border-radius: 80px 0 0 0;
+    gap: 20px;
+  }
+
+  .banner_title {
+    font-size: 42px; // Reduced from 60px
+    width: 90%;
+  }
+
+  .banner_description {
+    font-size: 22px; // Reduced from 28px
+    width: 90%;
+  }
+}
+
+// 2. TABLET / IPAD VIEW (769px - 1024px)
+@media (max-width: 1024px) {
+  .mainWrapperBanner {
+    height: 450px;
+  }
+
+  .box_banner_bottom {
+    height: 450px;
+    border-radius: 60px 0 0 0;
+    padding: 40px;
+    gap: 15px;
+  }
+
+  .banner_title {
+    font-size: 32px;
+    width: 100%;
+  }
+
+  .banner_description {
+    font-size: 20px;
+    width: 100%;
+  }
+
+  .wraper_arrow_top {
+    width: 50px !important;
+    height: 50px !important;
+    right: 20px;
+    bottom: 20px;
+  }
+}
+
+// 3. MOBILE VIEW (Up to 768px)
+@media (max-width: 768px) {
+  .mainWrapperBanner {
+    height: 500px; // Enough room for stacked image/text
+    flex-direction: column;
+  }
+
+  .wrape_image_banner {
+    height: 250px; // Image gets top half
+    position: relative !important;
+  }
+
+  .box_banner_bottom {
+    position: relative;
+    width: 100%;
+    height: auto;
+    min-height: 250px;
+    border-radius: 40px 40px 0 0; // Better look for mobile
+    padding: 30px 20px;
+    gap: 15px;
+  }
+
+  .banner_title {
+    font-size: 24px;
+    width: 100%;
+    line-height: 1.2;
+  }
+
+  .banner_description {
+    font-size: 18px;
+    width: 100%;
+    line-height: 1.4;
+  }
+
+  .wraper_arrow_top {
+    width: 45px !important;
+    height: 45px !important;
+    right: 15px;
+    bottom: 15px;
+    background-color: #222 !important; // Overriding your gray back to dark
+
+    &.showBtnArrow {
+      bottom: 20px;
+    }
+  }
+}
+
+// 4. SMALL MOBILE (480px)
+@media (max-width: 480px) {
+  .banner_title {
+    font-size: 22px;
+  }
+
+  .banner_description {
+    font-size: 16px;
+  }
+
+  .box_banner_bottom {
+    padding: 20px;
+  }
+}
+
+
+
+/* ======================================================
+   VIP BANNER & MECHANISM OF ACTION RESPONSIVE
+   ====================================================== */
+
+@media (max-width: 1400px) {
+  .mainWrapperBanner {
+    height: 550px !important; // Desktop height thori kam ki
+  }
+
+  .box_banner_bottom {
+    padding: 50px !important;
+    height: 550px !important;
+
+    .banner_title {
+      font-size: 45px !important;
+    }
+
+    .banner_description {
+      font-size: 24px !important;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .mainWrapperBanner {
+    height: 480px !important;
+    background-position: 20% center !important; // Image ko thora shift kiya
+  }
+
+  .box_banner_bottom {
+    border-radius: 80px 0 0 0 !important;
+    padding: 40px !important;
+
+    .banner_title {
+      font-size: 35px !important;
+    }
+
+    .banner_description {
+      font-size: 20px !important;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .mainWrapperBanner {
+    height: auto !important; // Height auto ki taake content stack ho sake
+    display: flex !important;
+    flex-direction: column !important;
+    background-position: top center !important;
+    background-size: 100% 300px !important; // Image ko top par fix kiya
+    margin-top: 80px !important;
+  }
+
+  .box_banner_bottom {
+    width: 100% !important;
+    height: auto !important;
+    min-height: 220px !important;
+    margin-top: 250px !important; // Image ke niche laane ke liye margin
+    border-radius: 40px 40px 0 0 !important; // Mobile look
+    padding: 30px 20px !important;
+    gap: 20px !important;
+    backdrop-filter: blur(10px) !important;
+    background: linear-gradient(180deg, rgba(20, 81, 54, 0.9) 0%, rgba(40, 94, 36, 0.9) 100%) !important;
+
+    .banner_title {
+      font-size: 26px !important;
+      width: 100% !important;
+      text-align: center !important;
+    }
+
+    .banner_description {
+      font-size: 16px !important;
+      width: 100% !important;
+      text-align: center !important;
+      line-height: 1.5 !important;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .mainWrapperBanner {
+    background-size: 100% 220px !important;
+  }
+
+  .box_banner_bottom {
+    margin-top: 180px !important;
+    padding: 25px 15px !important;
+
+    .banner_title {
+      font-size: 22px !important;
+    }
+
+    .banner_description {
+      font-size: 14px !important;
+    }
+  }
+}
+
+
+/* ======================================================
+   TARGETED FIX FOR 600px - 768px (Mobile & Small Tablets)
+   ====================================================== */
+
+@media (max-width: 768px) {
+  .mainWrapperBanner {
+    // min-height: 100vh; // Puri screen cover karega
+    display: flex !important;
+    flex-direction: column !important; // Content ek ke niche ek
+    background-image: url("../../../assets/images/png/mechanismBG.png") !important;
+          background-position: right 81% center !important;
+    background-size: cover !important; // Image ko katne se bachayega
+    background-attachment: scroll;
+    margin-top: 80px !important;
+    background-color: #f4f4f4; // Placeholder color
+  }
+
+  .box_banner_bottom {
+    position: relative !important;
+    width: 100% !important;
+    height: auto !important;
+    flex-grow: 1; // Bachi hui sari jagah cover karega
+    margin-top: 40% !important; // Image ke aspect ratio ke hisab se dynamic gap
+    border-radius: 40px 40px 0 0 !important;
+    padding: 40px 20px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important; // Text center
+    justify-content: flex-start !important;
+    gap: 15px !important;
+    background: linear-gradient(180deg, rgba(20, 81, 54, 0.95) 0%, rgba(40, 94, 36, 1) 100%) !important;
+    backdrop-filter: blur(15px) !important;
+
+    .banner_title {
+      font-size: clamp(22px, 5vw, 28px) !important; // Dynamic font sizing
+      width: 100% !important;
+      text-align: start !important;
+      line-height: 1.2 !important;
+    }
+
+    .banner_description {
+      font-size: clamp(14px, 4vw, 18px) !important;
+      width: 100% !important;
+      text-align: start !important;
+      line-height: 1.5 !important;
+      opacity: 0.9;
+    }
+  }
+}
+
+.wraper_img_mobl {
+  display: block;
+  height: 450px;
+
+  img {
+    object-position: center top;
+  }
+}

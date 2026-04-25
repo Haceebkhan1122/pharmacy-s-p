@@ -1,0 +1,196 @@
+.container {
+    background-color: #d1dbd9; // The light sage background
+    padding: 60px 20px;
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    text-align: center;
+    color: #333;
+
+    .header {
+        margin-bottom: 40px;
+
+        h1 {
+        color: #222;
+            text-align: center;
+            font-family: 'inter-regular';
+            font-size: 48px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 55px;
+        }
+
+        p {
+            color: #222;
+                text-align: center;
+                font-family: 'inter-regular';
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 300 !important;
+                line-height: 32px;
+                text-align: center ;
+                width: 70%;
+                margin: auto !important;
+                margin-top: 20px !important;
+                /* 133.333% */
+        }
+    }
+
+    .grid {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+
+        .imageWrapper {
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        .caption {
+        color: #222;
+            text-align: center;
+            font-family: 'inter-regular';
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 32px;
+            /* 133.333% */
+        }
+}
+
+
+
+/* --- Tablet View (Max-width: 1024px) --- */
+@media screen and (max-width: 1024px) {
+    .container {
+        padding: 40px 15px;
+
+        .header {
+            h1 {
+                font-size: 36px;
+                line-height: 44px;
+            }
+
+            p {
+                font-size: 20px;
+                width: 85%;
+                /* Tablet par width thodi badha di */
+            }
+        }
+
+        .card .caption {
+            font-size: 20px;
+        }
+    }
+}
+
+/* --- Mobile View (Max-width: 768px) --- */
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 30px 10px;
+
+        .header {
+            margin-bottom: 30px;
+
+            h1 {
+                font-size: 28px;
+                line-height: 35px;
+            }
+
+            p {
+                font-size: 16px;
+                line-height: 24px;
+                width: 100% !important;
+                /* Mobile par full width zaroori hai */
+                padding: 0 10px;
+            }
+        }
+
+        .grid {
+            gap: 15px;
+            /* Flex-wrap already hai, grid auto-adjust ho jayegi */
+        }
+
+        .card {
+            max-width: 90%;
+            margin-bottom: 20px;
+
+            .caption {
+                font-size: 16px;
+                line-height: 22px;
+            }
+
+            .imageWrapper {
+                border-radius: 15px;
+                /* Choti screen par kam radius behtar lagta hai */
+            }
+        }
+    }
+}
+
+/* --- Small Mobile (Max-width: 480px) --- */
+@media screen and (max-width: 480px) {
+    .container .card {
+        max-width: 100%;
+        /* Bilkul chote phones par single card */
+        min-width: 100%;
+    }
+}
+
+
+
+/* --- MOBILE VIEW (Max-width: 768px) --- */
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 30px 10px;
+
+        .header {
+            h1 {
+                font-size: 28px;
+                line-height: 35px;
+            }
+
+            p {
+                font-size: 16px;
+                width: 100% !important;
+                /* Full width for text on mobile */
+            }
+        }
+
+        .grid {
+            display: flex;
+            flex-direction: row;
+            /* Row mein rakhne ke liye */
+            flex-wrap: wrap;
+            /* Agli row mein bhejne ke liye agar 2 se zyada hon */
+            justify-content: space-between;
+            /* Dono cards ke beech barabar space */
+            gap: 10px;
+            /* Thoda gap images ke beech */
+        }
+
+        .card {
+            /* Ek row mein 2 images ke liye calculation */
+            flex: 0 0 calc(50% - 10px);
+            width: 100%;
+            /* Purani min-width hata di */
+
+            .imageWrapper {
+                border-radius: 15px;
+                margin-bottom: 10px;
+            }
+
+            .caption {
+                font-size: 15px;
+                line-height: 20px;
+            }
+        }
+    }
+}

@@ -1,0 +1,929 @@
+.patientSection {
+  padding-block: 100px;
+  background-color: #fff;
+
+  .displayCard {
+    // border-radius: 20px;
+    // border: 0.5px solid #77aa42;
+    // background: rgba(241, 242, 242, 0.6);
+    // height: 698px;
+    overflow: hidden;
+    margin-bottom: 30px;
+    overflow: hidden;
+    // position: relative;
+
+    .infoCol {
+      .header {
+        margin-bottom: 60px;
+        padding: 40px 0 0 40px;
+        h4 {
+          color: #000;
+          font-family: "Roboto", sans-serif;
+          font-size: 32px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 32px;
+
+          .name {
+            color: #5F6368;
+            font-family: "Roboto", sans-serif;
+            font-size: 32px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 32px;
+          }
+        }
+      }
+
+      .patientImg {
+        width: 100%;
+      }
+    }
+
+    .statsCol {
+      opacity: 0.9;
+      background: #dee6d9;
+      padding: 40px 32px;
+      display: flex;
+      align-items: flex-start;
+      flex-direction: column;
+
+      .statsList {
+        width: 100%;
+
+        .clinicalHeading {
+          color: #000;
+          font-family: "Roboto", sans-serif;
+          font-size: 24px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: normal;
+          padding-bottom: 24px;
+        }
+
+        .item {
+          margin-bottom: 40px;
+          display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+          .label {
+            color: #5f6368;
+            font-family: "Inter", sans-serif;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 38px; /* 158.333% */
+            margin-right: 10px;
+          }
+
+          .value {
+            color: #5f6368;
+            font-family: "Inter", sans-serif;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: 38px;
+          }
+        }
+      }
+    }
+
+    .expCol {
+      padding: 30px;
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      overflow-y: auto;
+        height: 100%;
+
+        &::-webkit-scrollbar {
+          display: none;
+        }
+    }
+
+    /* ---------- PARAMETERS ---------- */
+    .parametersBox {
+      h6 {
+        color: #5f6368;
+        font-family: "Inter", sans-serif;
+        font-size: 26px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 32px;
+        padding-bottom: 16px;
+      }
+    }
+
+    .parameterGrid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+    }
+
+    .parameterItem {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .paramLabel {
+      color: #5f6368;
+      font-family: "Inter", sans-serif;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 24.079px; /* 120.397% */
+    }
+
+    .paramValue {
+      color: #5f6368;
+      font-family: "Inter", sans-serif;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: 24.079px;
+    }
+
+    /* ---------- CLINICAL CHALLENGES ---------- */
+    .greenBox {
+      border-radius: 20px;
+      opacity: 0.9;
+      background: #e0e7dc;
+      padding: 12px 16px;
+
+      h6 {
+        color: #222;
+        font-family: "Inter", sans-serif;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 32px; /* 133.333% */
+        padding-bottom: 20px;
+      }
+    }
+
+    .challengeList {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .challengeItem {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      margin-bottom: 15px;
+
+      img {
+        width: 24px;
+        height: 24px;
+        margin-top: 2px;
+      }
+
+      span {
+        color: #5f6368;
+        font-family: "Inter", sans-serif;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+      }
+    }
+
+    /* ---------- THERAPEUTIC GOAL ---------- */
+    .therapyBox {
+      h6 {
+        color: #5f6368;
+        font-family: "Inter", sans-serif;
+        font-size: 26px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 32px; /* 123.077% */
+        padding-bottom: 12px;
+      }
+    }
+
+    .therapyList {
+      padding-left: 18px;
+      margin: 0;
+
+      li {
+        color: #5f6368;
+        font-family: "Inter", sans-serif;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 28px;
+      }
+    }
+
+    .clinicalImg {
+      width: 100%;
+      background: #fff;
+      padding-bottom: 2px;
+    }
+  }
+
+  .toggleWrapper {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;   
+     margin-top: 2rem;
+
+    .pill {
+      border-radius: 20px;
+      border: 0.5px solid #000;
+      padding: 10px;
+      display: flex;
+
+      button {
+        border: none;
+        background: transparent;
+        color: #000;
+        font-family: "Roboto", sans-serif;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        transition: 0.3s;
+        cursor: pointer;
+        border-radius: 14px;
+        height: 40px;
+        padding: 0 20px;
+
+        &.active {
+          background: #78AA42;
+          color: #fff;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+
+  .thumb {
+    cursor: pointer;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 27px;
+
+    .thumbImg {
+      overflow: hidden;
+      aspect-ratio: 1;
+      height: 228px;
+      flex-shrink: 0;
+      border-radius: 30px;
+      background: #ebf3fb;
+      width: 100%;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: top center;
+      }
+    }
+
+    p {
+      color: #222;
+      text-align: center;
+      font-family: "Roboto", sans-serif;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+    }
+
+    &.activeThumb .thumbImg {
+      border-radius: 30px;
+      border: 3px solid #77aa42;
+      background:
+        linear-gradient(0deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%),
+        #ebf3fb;
+    }
+  }
+
+  .controlsRow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+
+    .prevArrow,
+    .nextArrow {
+      background: none;
+      border: none;
+      font-size: 24px;
+      color: #2a3440;
+      cursor: pointer;
+      transition: color 0.2s ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .customPagination {
+      display: flex;
+      gap: 10px;
+      width: auto !important;
+      align-items: center;
+
+      /* Target Swiper internal bullets */
+      :global(.swiper-pagination-bullet) {
+        width: 33px;
+        height: 4px;
+        border-radius: 40px;
+        background: rgba(135, 153, 172, 0.5);
+        margin: 0 !important;
+        transition: all 0.3s ease;
+      }
+
+      :global(.swiper-pagination-bullet-active) {
+        background: #77aa42;
+      }
+    }
+  }
+}
+
+.sidePrev,
+.sideNext {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 30;
+  background: none;
+}
+
+.sidePrev {
+  left: -70px; /* more outside the card */
+}
+
+.sideNext {
+  right: -70px; /* more outside the card */
+}
+
+/* optional: slightly bigger buttons for extra emphasis */
+.sidePrev,
+.sideNext {
+  width: 48px;
+  height: 48px;
+  font-size: 24px;
+}
+
+/* hover/focus effect stays same */
+.sidePrev:hover,
+.sideNext:hover,
+.sidePrev:focus,
+.sideNext:focus {
+  transform: translateY(-50%) scale(1.05);
+  outline: none;
+}
+
+/* small screens tweak */
+@media (max-width: 767px) {
+  .sidePrev,
+  .sideNext {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    left: -12px; /* still peeking */
+    right: -12px;
+  }
+}
+
+
+
+/* ==========================================
+   PATIENT SECTION RESPONSIVE QUERIES
+   ========================================== */
+
+// 1. Laptop/Large Tablets (1024px to 1300px)
+@media (max-width: 1300px) {
+  .patientSection {
+    .displayCard {
+      height: auto; // Fixed height remove ki takay content overlap na ho
+      // min-height: 700px;
+      margin-bottom: 50px;
+
+      .infoCol .header {
+        padding: 30px 20px 0 30px;
+
+        h4,
+        .name {
+          font-size: 28px;
+        }
+      }
+
+      .parameterGrid {
+        grid-template-columns: repeat(2, 1fr); // 4 columns ko 2 mein convert kiya
+        gap: 15px;
+      }
+    }
+
+    // Side arrows ko card ke thora kareeb kiya
+    .sidePrev {
+      left: -40px;
+    }
+
+    .sideNext {
+      right: -40px;
+    }
+  }
+}
+
+// 2. Tablets (768px to 1023px)
+@media (max-width: 1023px) {
+  .patientSection {
+    padding-block: 60px;
+
+    .displayCard {
+
+      // Row columns ko stack karne ke liye heights adjust karein
+      .statsCol {
+        padding: 30px;
+
+        .item {
+          margin-bottom: 25px;
+        }
+      }
+
+      .expCol {
+        padding: 25px;
+        gap: 30px;
+      }
+    }
+
+    .sidePrev,
+    .sideNext {
+      // Tablet par arrows card ke upar rakhein ya hide kardein
+      background: rgba(255, 255, 255, 0.8);
+      width: 40px;
+      height: 40px;
+      left: 10px;
+    }
+
+    .sideNext {
+      right: 10px;
+      left: auto;
+    }
+
+    .thumb .thumbImg {
+      height: 220px; // Thumbnails size thora chota kiya
+    }
+  }
+}
+
+// 3. Mobile View (Below 768px)
+@media (max-width: 767px) {
+  .patientSection {
+    padding-block: 40px;
+
+    .displayCard {
+      border-radius: 15px;
+
+      // Stacking columns vertically
+      .infoCol {
+        .header {
+          padding: 20px;
+          text-align: center;
+          margin-bottom: 15px;
+
+          h4,
+          .name {
+            font-size: 22px;
+            line-height: 1.3;
+          }
+        }
+
+        .patientImg {
+          max-height: 350px;
+          object-fit: contain;
+        }
+      }
+
+      .statsCol {
+        padding: 25px 20px;
+
+        .clinicalHeading {
+          font-size: 20px;
+          text-align: center;
+        }
+
+        .item {
+          text-align: center;
+          margin-bottom: 20px;
+
+          .label,
+          .value {
+            font-size: 18px;
+            display: block;
+            line-height: 1.4;
+          }
+        }
+      }
+
+      .parameterGrid {
+        grid-template-columns: repeat(2, 1fr); // Mobile par readable 2 columns
+      }
+
+      .greenBox {
+        h6 {
+          font-size: 18px;
+        }
+
+        .challengeItem span {
+          font-size: 15px;
+        }
+      }
+    }
+
+    .sidePrev,
+    .sideNext {
+      display: none;
+    }
+
+    // Mobile par side arrows ki zaroorat nahi
+
+    .thumb {
+      gap: 10px;
+
+      .thumbImg {
+        height: 220px;
+        border-radius: 15px;
+
+        img {
+          width: 100%;
+          height: 100% !important;
+          object-fit: cover;
+        }
+      }
+
+      p {
+        font-size: 14px;
+      }
+    }
+
+    .controlsRow {
+      margin-top: 30px;
+
+      .prevArrow,
+      .nextArrow {
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+// 4. Very Small Mobile (Below 480px)
+@media (max-width: 480px) {
+  .patientSection .displayCard {
+    .parameterGrid {
+      grid-template-columns: 1fr; // Single column for tiny screens
+    }
+
+    .statsCol .item .label,
+    .statsCol .item .value {
+      font-size: 16px;
+    }
+  }
+}
+
+
+
+
+/* ==========================================
+   PROPER RESPONSIVE REFINEMENTS
+   ========================================== */
+
+.patientSection {
+
+  // Desktop standard fix
+  .displayCard {
+  // height: 698px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    // padding-bottom: 30px;
+  }
+
+  // 1. LAPTOP & SMALL DESKTOPS (1025px - 1400px)
+  @media (max-width: 1400px) {
+    .displayCard {
+      .infoCol .header {
+        padding: 30px;
+
+        h4,
+        .name {
+          font-size: 26px;
+        }
+      }
+
+      .statsCol {
+        padding: 30px 20px;
+
+        .item {
+          margin-bottom: 25px;
+
+          .label,
+          .value {
+            font-size: 18px;
+            line-height: 1.4;
+          }
+        }
+      }
+
+      .parameterGrid {
+        grid-template-columns: repeat(2, 1fr); // Grid simplify kiya
+      }
+
+      .sidePrev {
+        left: -50px;
+      }
+
+      .sideNext {
+        right: -50px;
+      }
+    }
+  }
+
+  // 2. TABLETS & IPADS (769px - 1024px)
+  @media (max-width: 1024px) {
+    padding-block: 50px;
+
+    .displayCard {
+      .infoCol .header {
+
+        h4,
+        .name {
+          font-size: 22px;
+        }
+      }
+
+      .statsCol .item {
+
+        .label,
+        .value {
+          font-size: 16px;
+        }
+      }
+
+      .greenBox h6,
+      .therapyBox h6 {
+        font-size: 20px;
+      }
+
+      // Arrows card ke andar move kar diye
+      .sidePrev {
+        left: 10px;
+        background: rgba(255, 255, 255, 0.8);
+      }
+
+      .sideNext {
+        right: 10px;
+        background: rgba(255, 255, 255, 0.8);
+      }
+    }
+
+    .thumb .thumbImg {
+      height: 220px; // Thumbnails ko manage kiya
+    }
+  }
+
+  // 3. MOBILE VIEW (Up to 768px)
+  @media (max-width: 768px) {
+    padding-block: 30px;
+
+    .displayCard {
+      margin-bottom: 20px;
+
+      .infoCol {
+        .header {
+          padding: 20px;
+          text-align: center;
+          margin-bottom: 0;
+
+          h4,
+          .name {
+            font-size: 20px;
+          }
+        }
+
+        .patientImg {
+          max-height: 300px;
+          width: auto;
+          margin: 0 auto;
+          display: block;
+        }
+      }
+
+      .statsCol {
+        background: #dee6d9; // Background overlap fix
+        padding: 20px;
+
+        .item {
+          margin-bottom: 15px;
+          text-align: left;
+
+          .label,
+          .value {
+            font-size: 15px;
+            line-height: 1.3;
+          }
+        }
+      }
+
+      .expCol {
+        padding: 20px;
+        gap: 20px;
+      }
+
+      .parameterGrid {
+        grid-template-columns: repeat(2, 1fr); // Mobile readability
+      }
+
+      .greenBox {
+        padding: 15px;
+
+        h6 {
+          font-size: 18px;
+          padding-bottom: 10px;
+        }
+
+        .challengeItem span {
+          font-size: 14px;
+        }
+      }
+
+      .therapyBox h6 {
+        font-size: 18px;
+      }
+
+      .therapyList li {
+        font-size: 14px;
+        line-height: 1.5;
+      }
+    }
+
+    .sidePrev,
+    .sideNext {
+      display: none;
+    }
+
+    // Swipe gesture use karein
+
+    .thumb {
+      .thumbImg {
+        height: 220px;
+        border-radius: 15px;
+      }
+
+      p {
+        font-size: 13px;
+        margin-top: 10px;
+      }
+    }
+
+    .controlsRow {
+      margin-top: 20px;
+      gap: 15px;
+    }
+  }
+
+  // 4. EXTRA SMALL MOBILE (Below 480px)
+  @media (max-width: 480px) {
+    .displayCard {
+      .parameterGrid {
+        grid-template-columns: 1fr; // Ek column taake text cut na ho
+      }
+
+      .infoCol .header h4,
+      .infoCol .header .name {
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+
+
+
+/* ======================================================
+   SEPARATE RESPONSIVE QUERIES FOR STATS & CARD HEIGHT
+   ====================================================== */
+
+// 1. Desktop & Laptop Adjustments (Font reduction & spacing)
+@media (min-width: 1025px) {
+  .statsCol {
+    padding: 30px 25px !important; // Excess padding kam ki
+
+    .item {
+      margin-bottom: 20px !important; // Spacing half kar di
+
+      .label,
+      .value {
+        font-size: 16px !important; // Default 24px se 16px par le aaye
+        line-height: 1.2 !important;
+      }
+    }
+  }
+}
+
+// 2. Tablet View (Scaling down further)
+@media (max-width: 1024px) {
+  .displayCard {
+    height: auto !important; // Fixed height strictly remove ki
+    min-height: unset !important;
+
+    img {
+        height: auto !important;
+      }
+  }
+
+  .statsCol {
+    padding: 20px !important;
+
+    .item {
+      margin-bottom: 15px !important;
+
+      .label,
+      .value {
+        font-size: 15px !important;
+      }
+    }
+  }
+}
+
+// 3. Mobile View (Maximum height control)
+@media (max-width: 767px) {
+  .displayCard {
+    margin-bottom: 20px !important;
+
+    // Patient image size control taake card lamba na ho
+    .infoCol .patientImg {
+      max-height: 250px !important;
+      width: auto !important;
+      margin: 0 auto !important;
+    }
+
+    img {
+      height: auto !important;
+    }
+
+    .statsCol {
+      padding: 15px 20px !important;
+
+      .item {
+        margin-bottom: 8px !important; // Minimal spacing
+        display: flex;
+        flex-wrap: wrap;
+
+        .label,
+        .value {
+          font-size: 14px !important; // Mobile par sabse chota size
+          line-height: 1.3 !important;
+        }
+
+        .label {
+          margin-right: 5px !important;
+          font-weight: 700 !important;
+        }
+      }
+    }
+
+    // Parameters section ko bhi compact kiya
+    .parameterGrid {
+      gap: 8px !important;
+
+      .paramLabel {
+        font-size: 14px !important;
+      }
+
+      .paramValue {
+        font-size: 13px !important;
+      }
+    }
+  }
+}
+
+// 4. Very Small Screens (Avoid text breaking)
+@media (max-width: 480px) {
+  .statsCol .item {
+
+    .label,
+    .value {
+      font-size: 13px !important;
+    }
+  }
+}

@@ -1,0 +1,373 @@
+.mechanismSection {
+    position: relative;
+    overflow: hidden;
+
+    .topSplit {
+        background-color: #E0E7EE;
+        height: 560px;
+
+        @media (max-width: 768px) {}
+    }
+
+    .doctorWrapper {
+        display: flex;
+        height: 100%;
+        height: 100%;
+
+        .doctorImg {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+    }
+
+    .textContent {
+        padding: 60px 0 60px 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+
+        h3 {
+            color: #000;
+            font-family: 'inter-regular';
+            font-size: 48px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            text-align: start;
+        }
+
+        p {
+            color: #000;
+            font-family: 'inter-regular';
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: 32px;
+            /* 133.333% */
+            width: 80%;
+
+            @media (max-width: 767px) {
+                width: 100%;
+                text-align: start;
+            }
+        }
+
+        .learnMoreBtn {
+            display: flex;
+            width: 346px;
+            height: 55px;
+            padding: 13px 20px;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            color: #FFF;
+            font-family: "inter-regular";
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            border-radius: 10px;
+            background: #78A941;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            transition: background-color 0.5s ease, color 0.5s ease;
+
+            &:hover {
+            background-color: #fff;
+            color: #78A941;
+            }
+        }
+    }
+
+    .bottomSection {
+        position: relative;
+        height: 630px;
+
+        img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: center;
+            }
+
+    }
+
+    .cardsContainer {
+        position: relative;
+        z-index: 2;
+        top: -55px;
+        left: 47px;
+    }
+
+    .cardStack {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: absolute;
+        left: 17%;
+        z-index: 99;
+        top: -62px;
+        width: fit-content;
+        bottom: 0;
+        justify-content: space-between;
+    }
+    .featureCard {
+        width: 630px;
+        height: 228px;
+        border-radius: 40px 40px 40px 0;
+        background: #FFF;
+        box-shadow: 0 20px 40px 0 rgba(203, 214, 209, 0.60);
+        padding: 35px;
+        margin-bottom: 25px;
+
+        &:last-child{
+            margin-bottom: 0;
+        }
+
+        .iconBox {
+            flex-shrink: 0;
+            margin-right: 20px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+
+            img {
+                width: 60px;
+                height: 60px;
+                margin-right: 10px;
+                object-fit: contain;
+            }
+
+            h3 {
+                color: #222;
+                font-family: 'inter-regular';
+                font-size: 30px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                width: 55%;
+            }
+        }
+
+        .cardBody {
+            h3 {
+                font-size: 1.1rem;
+                font-weight: 600;
+                margin-bottom: 8px;
+                color: #333;
+            }
+
+            p {
+                color: #222;
+                font-family: 'inter-regular';
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: 1.3;
+                padding-top: 15px;
+                /* 125% */
+            }
+        }
+    }
+}
+
+// Ensure responsiveness
+@media (max-width: 992px) {
+    .mechanismSection .cardsContainer {
+        top: -50px;
+    }
+
+    .mechanismSection .textContent {
+        padding-left: 15px;
+    }
+}
+
+
+
+/* --- Desktop Styles (Aapka Original Code) Yahan Hoga --- */
+/* ... (Existing Code) ... */
+
+// ==========================================
+// TABLET & LAPTOP VIEW (Max-width: 992px)
+// ==========================================
+@media (max-width: 992px) {
+    .mechanismSection {
+        .topSplit {
+            height: auto;
+            padding-bottom: 40px;
+        }
+
+        .textContent {
+            padding: 40px 20px;
+            align-items: center;
+            text-align: center;
+
+            h2 {
+                font-size: 36px;
+                text-align: center;
+            }
+
+            p {
+                font-size: 20px;
+            }
+        }
+
+        .cardsContainer {
+            left: 0;
+            top: 0;
+            padding: 0 20px;
+        }
+
+        .cardStack {
+            position: relative;
+            left: 0;
+            top: 20px;
+            width: 100%;
+            gap: 25px;
+        }
+
+        .bottomSection {
+            width: 100%;
+            height: auto;
+            padding-bottom: 60px;
+
+            img {
+                    width: 100%;
+                    height: auto;
+                }
+        }
+    }
+}
+
+// ==========================================
+// MOBILE VIEW (Max-width: 768px)
+// ==========================================
+@media (max-width: 768px) {
+
+    .bottomSection {
+        width: 100%;
+        height: auto;
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+
+
+    .mechanismSection {
+        .doctorWrapper {
+            flex-direction: column;
+        }
+
+        .featureCard {
+            width: 100%;
+            height: auto;
+            min-height: 150px;
+            border-radius: 25px;
+
+            .iconBox h3 {
+                font-size: 22px;
+            }
+        }
+    }
+}
+
+// ==========================================
+// SMALL MOBILE VIEW (Max-width: 480px)
+// ==========================================
+@media (max-width: 480px) {
+    .mechanismSection {
+        .textContent {
+            h2 {
+                font-size: 28px;
+            }
+
+            p {
+                font-size: 16px;
+                line-height: 24px;
+            }
+
+            .learnMoreBtn {
+                width: 100%;
+                font-size: 18px;
+                height: 50px;
+            }
+        }
+
+        .featureCard {
+            padding: 15px;
+
+            .cardBody p {
+                font-size: 15px;
+                line-height: 22px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .featureCard {
+        width: 45%; // 2 columns in a row
+
+        .iconBox h3 {
+            font-size: 22px;
+        }
+
+        .cardBody p {
+            font-size: 17px;
+        }
+    }
+}
+
+// 2. TABLET VIEW (769px - 1023px)
+@media screen and (min-width: 769px) and (max-width: 1023px) {
+    .featureCard {
+        width: 48%; // 2 columns
+        padding: 20px;
+        border-radius: 30px 30px 30px 0;
+
+        .iconBox h3 {
+            font-size: 20px;
+        }
+
+        .cardBody p {
+            font-size: 16px;
+            line-height: 1.4;
+        }
+    }
+}
+
+// 3. MOBILE VIEW (Under 768px)
+@media screen and (max-width: 768px) {
+    .featureCard {
+        width: 89% !important; // Single column
+        min-width: unset;
+        margin-bottom: 20px;
+        padding: 20px;
+        border-radius: 25px 25px 25px 0;
+
+        .iconBox {
+            h3 {
+                font-size: 20px;
+            }
+
+            span svg {
+                width: 30px;
+                height: 30px;
+            }
+
+            // Agar icon SVG hai
+        }
+
+        .cardBody p {
+            font-size: 15px;
+            line-height: 1.4;
+        }
+    }
+}

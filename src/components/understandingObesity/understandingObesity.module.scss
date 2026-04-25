@@ -1,0 +1,166 @@
+.PakUnderstands {
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+  flex-direction: column;
+  padding-bottom: 50px;
+  background-color: #FFFF;
+  padding-top: 90px;
+
+
+  img {
+    width: 100%;
+    height: 572px;
+    margin-bottom: 60px;
+
+    @media (max-width: 767px) {
+      height: 100%;
+    }
+  }
+
+  h1 {
+    color: #222222;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 60px !important;
+
+    @media(min-width:768px) and (max-width:1100px) {
+      font-size: 30px;
+      margin-bottom: 20px !important;
+      margin-top: 30px !important;
+    }
+
+    @media(min-width:0px) and (max-width:767px) {
+      font-size: 32px !important;
+      width: 100% !important;
+      line-height: 37px !important;
+      letter-spacing: 0px;
+    }
+  }
+
+
+  .oo1 {
+    font-family: 'Inter', sans-serif;
+    ;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0px;
+    text-align: center;
+    padding: 0 5rem;
+    color: #222222;
+    margin-bottom: 30px !important;
+  }
+
+  .oo2 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0px;
+    text-align: center;
+    color: #222222;
+  }
+
+  .singleCard {
+    height: 330px;
+    border-radius: 40px 40px 0 40px;
+    background: linear-gradient(0deg, #EBF3FB 0%, #EBF3FB 100%), rgba(245, 219, 213, 0.60);
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    gap: 30px;
+    padding: 40px 40px;
+    margin-top: 60px !important;
+    margin-bottom: 40px !important;
+
+
+    img {
+      width: 100px;
+      height: auto;
+      object-fit: fill;
+      margin-bottom: 0px !important;
+    }
+
+    h4 {
+      color: #000;
+      font-family: 'Barlow', sans-serif;
+      font-size: 34px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+    }
+  }
+
+  .hiiggg {
+    color: #222;
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 32px;
+    text-align: center;
+
+  }
+}
+
+@media (max-width: 768px) {
+  .PakUnderstands {
+    padding-top: 30px;
+    padding-bottom: 20px;
+
+    img {
+      width: 100%;
+      height: auto !important;
+      margin-bottom: 40px !important;
+    }
+
+    h1 {
+      font-size: 22px !important;
+      margin-bottom: 30px !important;
+      line-height: 28px !important;
+      width: 90% !important;
+      margin: auto;
+    }
+
+    .oo1,
+    .oo2,
+    .hiiggg {
+      font-size: 16px !important;
+      padding: 0 20px;
+      line-height: 25px !important;
+    }
+
+    .singleCard {
+      width: 90%;
+      height: auto;
+      border-radius: 25px;
+      padding: 25px 20px !important;
+      gap: 20px;
+      margin-top: 40px !important;
+      margin-bottom: 25px !important;
+      align-items: center;
+      text-align: center;
+      margin: auto;
+
+      img {
+        width: 70px !important;
+        height: auto !important;
+      }
+
+      h4 {
+        font-size: 22px !important;
+        text-align: center !important;
+        width: 73%;
+        margin: auto !important;
+      }
+    }
+  }
+}

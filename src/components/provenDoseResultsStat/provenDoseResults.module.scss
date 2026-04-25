@@ -1,0 +1,183 @@
+.provenSection {
+    padding: 80px 0;
+    // background-image: url('../../assets/images/png/prbg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    background-color: #e2f0d9;
+    ;
+
+    h2 {
+        color: #222;
+        text-align: center;
+        font-family: 'inter-regular';
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 60px;
+
+    }
+
+
+    // Jab Vial tab active ho (How to use mode)
+    &.bgVialActive {
+        background-color: #e2f0d9; // Light green background from image
+    }
+
+    .headerArea h2 {
+        text-align: center;
+        font-size: 42px;
+        margin-bottom: 40px;
+        font-family: 'inter-regular', sans-serif;
+    }
+
+    // Is class se Vial tab mein white shadow box hide ho jayega (Optional based on design)
+    .vialContentOnly {
+        box-shadow: none;
+        background: transparent;
+    }
+
+    .mainTabBox {
+        border-radius: 30px;
+        overflow: hidden;
+        box-shadow: 0 15px 50px rgba(0, 0, 0, 0.08);
+        min-height: 600px;
+    }
+
+    // Step Navigation Style (Match with image 40f1f8)
+    .stepNav {
+        background: #fff;
+        border: 1px solid #ddd;
+        border-radius: 50px;
+        padding: 5px;
+        display: inline-flex;
+
+        width: 100%;
+        justify-content: space-between;
+
+        .tabBtn {
+            border-radius: 40px;
+            color: #555;
+            background: transparent;
+            font-size: 14px;
+            padding: 10px 25px;
+            margin: 0; // No margin inside the pill nav
+
+            &:global(.active) {
+                background-color: #78a941 !important;
+                color: #fff !important;
+            }
+        }
+    }
+
+    .stepCard {
+        background: #fff;
+        border-radius: 30px;
+        overflow: hidden;
+        height: 100%;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+
+        .imgBox {
+            background-color: #c5d9b3; // Muted green from UI
+            padding: 40px;
+            display: flex;
+            justify-content: center;
+
+            img {
+                max-width: 100%;
+                height: 250px;
+                object-fit: contain;
+            }
+        }
+
+        .textBox {
+            padding: 40px 30px;
+            text-align: center;
+            background: #fff;
+            min-height: 150px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            p {
+                font-size: 18px;
+                color: #444;
+                line-height: 1.6;
+                margin: 0;
+            }
+        }
+    }
+
+
+    :global(.nav-link) {
+        display: flex;
+        width: 190px;
+        padding: 10px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        border-radius: 0 20px;
+        background: linear-gradient(0deg, #FFF 0%, #FFF 100%), #78A941;
+
+        color: #222;
+        text-align: center;
+        font-family: 'figtree-regular';
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin-right: 20px !important;
+
+
+    }
+
+
+    :global(.nav-link.active) {
+        border-radius: 0 20px !important;
+        background: linear-gradient(0deg, #78A941 0%, #78A941 100%), #78A941 !important;
+        color: #FFF;
+        text-align: center;
+        font-family: 'figtree-regular';
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin-right: 20px !important;
+    }
+
+
+    .stepNavvv {
+        border-radius: 24px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-wrap: nowrap;
+        height: 66px;
+        border: var(--stroke-weight-1, 1px) solid var(--color-black-solid, #000);
+        background: var(--color-white-solid, #FFF);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        :global(.nav-link) {
+            display: flex;
+            width: 154px !important;
+            height: 64px !important;
+            justify-content: center;
+            align-items: center;
+            border-radius: 24px !important;
+            margin-right: 20px !important;
+        }
+
+        :global(.nav-link.active) {
+            display: flex;
+            width: 154px;
+            height: 64px;
+            justify-content: center;
+            align-items: center;
+            border-radius: 24px !important;
+            margin-right: 20px !important;
+        }
+    }
+}

@@ -1,0 +1,456 @@
+.outerFrameSemPP {
+  padding: 100px 0;
+  background-color: #EBF3FB;
+
+  @media (min-width: 1201px)and (max-width: 1450px) {
+    padding: 80px 0;
+
+  }
+
+  @media (min-width: 1025px)and (max-width: 1200px) {
+    padding: 50px 0;
+  }
+
+  @media (min-width: 768px)and (max-width: 1024px) {
+    padding: 50px 0;
+  }
+}
+
+// .containerSemP {
+//   display: flex;
+//   overflow: visible;
+//   gap: 0;
+//   justify-content: center;
+//   align-items: center;
+// }
+
+.cardSemP {
+  h3 {
+    color: #222;
+    font-family: "Inter", sans-serif;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.3;
+  }
+}
+
+.cardTitleSemP {
+  font-family: "Inter", sans-serif;
+  color: #222;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 1.3;
+  margin: 30px 0px !important;
+
+
+  @media (min-width: 1201px)and (max-width: 1450px) {
+    font-size: 38px !important;
+  }
+
+  @media (min-width: 1025px)and (max-width: 1250px) {
+    width: 100%;
+    font-size: 32px !important;
+    line-height: 38px;
+  }
+
+  @media (min-width: 768px)and (max-width: 1024px) {
+    font-size: 30px !important;
+  }
+
+  /* 125% */
+  b {
+    font-weight: 500 !important;
+  }
+}
+
+/* LEFT area */
+.leftSemP {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.leftInnerSemP {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.imageMaskSemP {
+  width: 100%;
+  height: 612px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @media (min-width: 1201px) and (max-width: 1450px) {
+    height: auto;
+
+  }
+
+  @media (min-width: 1025px) and (max-width: 1200px) {
+    height: auto;
+
+  }
+
+  @media (min-width: 768px) and (max-width: 1024px) {
+    height: auto;
+
+  }
+}
+
+.imageMaskSemP img {
+  width: 100%;
+  height: 612px;
+
+  @media (min-width: 1201px) and (max-width: 1450px) {
+    height: auto;
+
+  }
+
+  @media (min-width: 1025px) and (max-width: 1200px) {
+    height: auto;
+
+  }
+
+  @media (min-width: 768px) and (max-width: 1024px) {
+    height: auto;
+
+  }
+}
+
+/* RIGHT card */
+.cardSemP {
+  width: 100%;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+.cardDescriptionSemP {
+  font-family: "Inter", sans-serif;
+  color: #000;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 32px;
+  /* 133.333% */
+
+  @media (min-width: 1201px)and (max-width: 1450px) {
+    margin-top: 20px !important;
+
+  }
+
+  @media (min-width: 1025px)and (max-width: 1200px) {
+    margin-top: 20px !important;
+
+  }
+
+  @media (min-width: 768px)and (max-width: 1024px) {
+    margin-top: 20px !important;
+
+  }
+
+  @media (min-width: 0px)and (max-width:767px) {
+    margin-top: 10px !important;
+
+  }
+}
+
+.cardFooterSemP {
+  color: #222;
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: normal;
+  margin-top: 40px !important;
+  padding-right: 112px;
+
+  &:nth-child(4) {
+    margin-top: 20px !important;
+  }
+
+  &:nth-child(5) {
+    margin-top: 20px !important;
+  }
+
+  @media (min-width: 1101px) and (max-width:1450px) {
+    margin-top: 20px !important;
+    font-size: 18px;
+    padding-right: 30px;
+  }
+
+  @media (min-width: 768px) and (max-width:1100px) {
+    margin-top: 20px !important;
+    font-size: 16px;
+    padding-right: 30px;
+  }
+
+  @media(min-width:0px) and (max-width:767px) {
+    font-size: 16px;
+    padding-right: inherit;
+    line-height: 28px;
+    margin-bottom: 20px !important;
+    margin-top: 20px !important;
+  }
+
+
+}
+
+.cardContainerSemP {
+  button {
+    display: flex;
+    width: 222px;
+    height: 55px;
+    padding: 13px 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px;
+    background: #78A941;
+    border: 1px solid #77AA42;
+    margin-right: 25px;
+    color: #FFF;
+    font-family: "Inter", sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    transition: 0.5s;
+
+    &:hover {
+      background-color: transparent;
+      border: 1px solid #77AA42;
+      color: #77AA42;
+    }
+
+    &:last-child {
+      background-color: transparent;
+      border: 1px solid #77AA42;
+      color: #77AA42;
+
+      &:hover {
+        background-color: #77AA42;
+        color: #fff;
+      }
+    }
+
+
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .outerFrameSemPP {
+    padding: 30px 20px;
+  }
+
+  .cardTitleSemP {
+    width: 100%;
+    font-size: 26px;
+    line-height: normal;
+  }
+
+  .cardDescriptionSemP {
+    font-size: 16px;
+    margin-top: 15px !important;
+    line-height: 22px;
+  }
+
+  .containerSemP {
+    border-radius: 0;
+    padding: 0;
+  }
+
+  .cardContainerSemP {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  .cardSemP {
+    border-radius: 18px;
+    padding: 28px;
+    width: 100%;
+    display: flex;
+    padding: 0;
+  }
+
+  .imageMaskSemP {
+    height: auto !important;
+  }
+
+  .imageMaskSemP img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .outerFrameSemPP {
+    padding: 30px 20px;
+  }
+
+  .cardTitleSemP {
+    width: 100%;
+    font-size: 26px;
+    line-height: normal;
+  }
+
+  .cardDescriptionSemP {
+    font-size: 16px;
+    margin-top: 15px !important;
+    line-height: 22px;
+  }
+
+  .containerSemP {
+    border-radius: 0;
+    padding: 0;
+  }
+
+  .cardContainerSemP {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  .cardSemP {
+    border-radius: 18px;
+    padding: 28px;
+    width: 100%;
+    display: flex;
+    padding: 0;
+  }
+
+  .imageMaskSemP {
+    height: auto !important;
+  }
+
+  .imageMaskSemP img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+:global(.urdu) {
+  .outerFrameSemPP {
+    @media (max-width: 1024px) and (min-width: 768px) {
+      padding: 80px 20px 20px;
+    }
+  }
+
+  .cardTitleSemP {
+    color: #222;
+    text-align: right;
+    font-family: "Jameel Noori Nastaleeq";
+    direction: rtl;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 60px;
+    width: 100%;
+    /* 125% */
+  }
+
+  .cardDescriptionSemP {
+    color: #222;
+    text-align: right;
+    font-family: "Jameel Noori Nastaleeq";
+    font-size: 30px;
+    direction: rtl;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 38px;
+    /* 158.333% */
+
+  }
+
+  .cardFooterSemP {
+    color: #222;
+    padding-right: 0;
+    font-family: "Jameel Noori Nastaleeq";
+    font-size: 30px;
+    direction: rtl;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 38px;
+
+    @media (min-width: 1101px) and (max-width:1450px) {
+      margin-top: 20px !important;
+      font-size: 18px;
+      padding-right: 0px;
+    }
+
+    @media (min-width: 768px) and (max-width:1100px) {
+      margin-top: 20px !important;
+      font-size: 16px;
+      padding-right: 0px;
+
+    }
+
+    @media(min-width:0px) and (max-width:767px) {
+      font-size: 16px;
+      line-height: 30px;
+      margin-bottom: 20px !important;
+      margin-top: 20px !important;
+      padding-right: 0px;
+
+    }
+
+    span {
+      font-family: "inter";
+    }
+  }
+
+  .cardSemP {
+    align-items: end;
+    height: auto;
+
+    @media (max-width: 1023px) and (min-width: 768px) {
+      padding-right: 20px;
+    }
+
+    @media (max-width: 768px) {
+      padding: 0
+    }
+  }
+
+  @media (max-width: 1100px) and (min-width: 768px) {
+    .cardTitleSemP {
+      width: 100%;
+      font-size: 34px;
+      line-height: 45px;
+    }
+
+    .cardDescriptionSemP {
+      font-size: 20px;
+    }
+
+    .cardFooterSemP {
+      font-size: 20px;
+      margin-top: 10px !important;
+    }
+  }
+
+  @media (max-width: 767px) {
+    .cardTitleSemP {
+      width: 100%;
+      font-size: 34px;
+      line-height: 45px;
+    }
+
+    .cardDescriptionSemP {
+      font-size: 20px;
+    }
+
+    .cardFooterSemP {
+      font-size: 18px;
+      margin-top: 0 !important;
+    }
+  }
+}

@@ -1,0 +1,415 @@
+.researchSection {
+    padding: 80px 0;
+    background-color: #FFFF;
+    // background-image: url('../../../assets/images/png/semp5.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    .LearnButton {
+        display: flex;
+        justify-content: center;
+        // padding-bottom: 4rem;
+
+        .buttonsmore {
+            padding: 13px 20px;
+            background-color: #78A941;
+            font-family: 'Inter';
+            font-weight: 500;
+            border-radius: 10px;
+            font-size: 24px;
+            line-height: 100%;
+            letter-spacing: 0px;
+            border-color: #78A941;
+
+        }
+    }
+
+    .headerArea {
+        text-align: center;
+        margin-bottom: 60px;
+
+        h2 {
+            color: #222;
+            text-align: center;
+            font-family: 'inter-regular';
+            font-size: 48px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 55px;
+            /* 114.583% */
+            /* 114.583% */
+        }
+
+        p {
+            color: #222;
+            text-align: center;
+            font-family: 'inter-regular';
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: 32px;
+            /* 133.333% */
+            margin-top: 20px !important;
+            /* 133.333% */
+        }
+    }
+
+    .studyCard {
+        // background-color: #FFF; // Matches image cd5b52.png card tint
+        padding: 40px;
+        height: 340px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        border-radius: 40px 40px 40px 0; // The asymmetrical "ticket" cut
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+
+        border-radius: 40px 0;
+        border: 1px solid #77AA42;
+
+        .journalName {
+            font-family: 'inter-regular', sans-serif;
+            font-size: 14px;
+            color: #666;
+            display: block;
+            margin-bottom: 12px;
+        }
+
+        h3 {
+            font-family: 'inter-regular', sans-serif;
+            font-size: 24px;
+            line-height: 1.4;
+            color: #000;
+            font-weight: 400;
+            margin-bottom: 20px;
+        }
+
+        .date {
+            font-family: 'inter-regular', sans-serif;
+            font-size: 16px;
+            color: #666;
+            display: block;
+            margin-bottom: 30px;
+        }
+
+        .viewBtn {
+            width: fit-content;
+            background: #006CB0;
+            color: #fff;
+            border: none;
+            padding: 10px 24px;
+            border-radius: 8px;
+            font-family: 'inter-regular-Medium', sans-serif;
+            font-size: 18px;
+        }
+    }
+
+    .mainLearnMore {
+        width: 346px;
+        height: 55px;
+        background: #006CB0;
+        color: #fff;
+        border: none;
+        border-radius: 10px;
+        font-family: 'inter-regular-Medium', sans-serif;
+        font-size: 24px;
+        font-weight: 500;
+        transition: background-color 0.2s;
+
+        &:hover {
+            background-color: #005a8c;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .researchSection {
+        .headerArea h2 {
+            font-size: 32px;
+        }
+
+        .headerArea p {
+            font-size: 18px;
+        }
+
+        .mainLearnMore {
+            width: 100%;
+        }
+    }
+}
+
+
+.viewBtnDownload {
+    border-radius: 15px;
+    background: #78A941;
+    color: #FFF;
+    font-family: 'inter-medium';
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    display: flex;
+    width: 200px;
+    height: 50px;
+    padding: 10px 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border: none;
+    outline: none;
+    white-space: nowrap;
+}
+
+
+.viewBtnPaper {
+    display: flex;
+    width: 200px;
+    height: 50px;
+    padding: 10px 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: #222;
+    font-family: 'inter-regular';
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border-radius: 15px;
+    border: 1px solid #222;
+    background-color: #FFF;
+}
+
+
+
+/* ==========================================
+   RESEARCH SECTION RESPONSIVE
+   ========================================== */
+
+@media (max-width: 1200px) {
+    .researchSection {
+        padding: 60px 20px;
+
+        .headerArea {
+            h2 {
+                font-size: 38px;
+                line-height: 45px;
+            }
+
+            p {
+                font-size: 20px;
+            }
+        }
+
+        .studyCard {
+            height: auto; // Height auto zaroori hai tablet/mobile ke liye
+            min-height: 340px;
+            padding: 30px;
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .researchSection {
+        .studyCard {
+            h3 {
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .researchSection {
+        padding: 40px 15px;
+        background-attachment: scroll; // Mobile par performance ke liye
+
+        .headerArea {
+            margin-bottom: 30px;
+
+            h2 {
+                font-size: 30px;
+                line-height: 38px;
+            }
+
+            p {
+                font-size: 18px;
+                line-height: 26px;
+            }
+        }
+
+        .studyCard {
+            height: auto; // Content ke mutabiq barhay ga
+            min-height: unset;
+            padding: 25px;
+            border-radius: 25px 25px 25px 0;
+
+            h3 {
+                font-size: 18px;
+                line-height: 1.4;
+            }
+        }
+
+        // Buttons Container (jo d-flex gap-5 tha)
+        .d-flex.gap-5 {
+            flex-direction: column;
+            gap: 15px !important;
+            width: 100%;
+        }
+
+        .viewBtnDownload,
+        .viewBtnPaper,
+        .mainLearnMore {
+            width: 100% !important;
+            max-width: 100%;
+            font-size: 18px;
+            height: 50px;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .researchSection {
+        .headerArea h2 {
+            font-size: 26px;
+        }
+
+        .studyCard h3 {
+            font-size: 17px;
+        }
+    }
+}
+
+
+
+/* ==========================================
+   RESEARCH SECTION RESPONSIVE (OPTIMIZED)
+   ========================================== */
+
+// 1. LAPTOP & IPAD PRO FIX (Fixes the "disturbed" UI at 1025px)
+@media (max-width: 1300px) and (min-width: 993px) {
+    .researchSection {
+        padding: 60px 30px;
+
+        .headerArea {
+            h2 {
+                font-size: 40px;
+                line-height: 48px;
+            }
+
+            p {
+                font-size: 22px;
+            }
+        }
+
+        .studyCard {
+            height: auto;
+            min-height: 400px; // Increased to accommodate text wrapping
+            padding: 30px 20px;
+
+            h3 {
+                font-size: 19px; // Slightly smaller to prevent card overflow
+                line-height: 1.4;
+            }
+
+            // Buttons need to be smaller to stay side-by-side
+            .viewBtnDownload,
+            .viewBtnPaper {
+                width: 48% !important; // Use percentage to stay side-by-side
+                font-size: 14px !important;
+                height: 45px !important;
+                padding: 10px 5px !important;
+            }
+        }
+    }
+}
+
+// 2. TABLET VIEW (iPad / Small Laptops)
+@media (max-width: 992px) {
+    .researchSection {
+        padding: 50px 20px;
+
+        .studyCard {
+            min-height: unset;
+            height: auto;
+            padding: 25px;
+
+            h3 {
+                font-size: 18px;
+            }
+
+            .viewBtnDownload,
+            .viewBtnPaper {
+                width: 160px;
+                font-size: 15px !important;
+            }
+        }
+    }
+}
+
+// 3. MOBILE VIEW (Phones)
+@media (max-width: 768px) {
+    .researchSection {
+        padding: 40px 15px;
+
+        .headerArea {
+            margin-bottom: 30px;
+
+            h2 {
+                font-size: 28px;
+                line-height: 36px;
+            }
+
+            p {
+                font-size: 18px;
+                line-height: 26px;
+            }
+        }
+
+        .studyCard {
+            border-radius: 30px 30px 30px 0;
+            margin-bottom: 20px;
+
+            h3 {
+                font-size: 18px;
+            }
+        }
+
+        // Target the flex container from Bootstrap (gap-5) to stack
+        [class*="gap-5"],
+        .d-flex {
+            flex-direction: column !important;
+            gap: 12px !important;
+            width: 100%;
+        }
+
+        .viewBtnDownload,
+        .viewBtnPaper,
+        .mainLearnMore {
+            width: 100% !important;
+            max-width: 100%;
+            font-size: 18px !important;
+            height: 50px !important;
+            display: flex;
+            justify-content: center;
+        }
+    }
+}
+
+// 4. SMALL MOBILE
+@media (max-width: 480px) {
+    .researchSection {
+        .headerArea h2 {
+            font-size: 24px;
+        }
+
+        .studyCard {
+            padding: 20px;
+
+            h3 {
+                font-size: 17px;
+            }
+        }
+    }
+}

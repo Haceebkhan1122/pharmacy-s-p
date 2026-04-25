@@ -1,0 +1,677 @@
+.dosingScheduleSection {
+  padding: 100px 0;
+  background: #ffffff;
+}
+
+// Header Styles
+.mainHeading {
+  color: #222;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 55px; /* 114.583% */
+  padding-bottom: 20px;
+
+  @media (max-width: 768px) {
+    font-size: 28px;
+  }
+}
+
+.subHeading {
+  color: #f00;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 32px; /* 133.333% */
+  padding-bottom: 70px;
+
+  @media (max-width: 768px) {
+    font-size: 14px;
+    padding-bottom: 30px;
+  }
+}
+
+// Main Dosing Card
+.dosingCard {
+  background-repeat: no-repeat; /* prevent tiling */
+  padding-block: 60px;
+  margin-bottom: 70px;
+
+  @media (max-width: 992px) {
+    padding: 30px 25px;
+  }
+
+  @media (max-width: 768px) {
+    padding: 25px 20px;
+  }
+}
+
+// Left Section
+.leftSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (max-width: 992px) {
+    border-right: none;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+    padding-right: 0;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+  }
+}
+
+// Right Section - Table
+.rightSection {
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
+
+  @media (max-width: 992px) {
+    padding-left: 0;
+  }
+}
+
+.tableContainer {
+  width: 100%;
+  border-radius: 30px;
+  background: #fff;
+}
+
+.dosingTable {
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: separate;
+  border-spacing: 0;
+
+  thead {
+    tr {
+      th {
+        background: #e4eed9;
+        backdrop-filter: blur(10px);
+        padding: 30px;
+        color: #222;
+        text-align: center;
+        font-family: "Inter", sans-serif;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+
+        border-bottom: 1.5px solid #77aa42;
+        border-right: 1.5px solid #77aa42;
+
+        &:first-child {
+          border-top-left-radius: 30px;
+        }
+
+        &:last-child {
+          border-top-right-radius: 30px;
+        }
+
+        @media (max-width: 768px) {
+          font-size: 12px;
+          padding: 12px 8px;
+        }
+      }
+    }
+  }
+
+  tbody {
+    tr {
+      transition: background-color 0.2s ease;
+
+      &:hover {
+        background-color: #f9fafb;
+      }
+
+      td {
+        padding-block: 15px;
+        padding-inline: 10px;
+        vertical-align: middle;
+        text-align: center;
+        color: #222;
+        text-align: center;
+        font-family: "Inter", sans-serif;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+        border-bottom: 1.5px solid #77aa42;
+        border-right: 1.5px solid #77aa42;
+
+        @media (max-width: 768px) {
+          font-size: 12px;
+          padding: 12px 8px;
+        }
+      }
+
+      &:last-child {
+        td {
+          &:first-child {
+            border-bottom-left-radius: 30px;
+          }
+
+          &:last-child {
+            border-bottom-right-radius: 30px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.doseCell {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+
+  strong {
+    color: #222;
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  span {
+    color: #222;
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+  }
+}
+
+// Contact Card
+.contactCard {
+  height: 70px;
+  border-radius: 16px;
+  padding: 20px 30px;
+  box-shadow: 0 4px 16px rgba(26, 77, 74, 0.2);
+  text-align: center;
+
+  @media (max-width: 768px) {
+    padding: 18px 20px;
+  }
+}
+
+.contactText {
+  margin: 0;
+  color: #fff;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px; /* 133.333% */
+
+  @media (max-width: 768px) {
+    font-size: 14px;
+  }
+}
+
+.contactLink {
+  color: #fff;
+  font-family: "Inter", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-skip-ink: auto;
+  text-decoration-thickness: auto;
+  text-underline-offset: auto;
+  text-underline-position: from-font;
+}
+
+// Responsive adjustments
+@media (max-width: 992px) {
+  .dosingScheduleSection {
+    padding: 40px 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .dosingScheduleSection {
+    padding: 30px 0;
+  }
+
+  .mainHeading {
+    font-size: 24px;
+  }
+
+  .subHeading {
+    font-size: 13px;
+  }
+}
+
+// Print styles
+@media print {
+  .dosingCard,
+  .contactCard {
+    box-shadow: none;
+    border: 1px solid #ddd;
+  }
+
+  .contactLink {
+    text-decoration: none;
+  }
+}
+
+
+
+/* ======================================================
+   DOSING SCHEDULE SECTION - SEPARATE RESPONSIVE QUERIES
+   ====================================================== */
+
+// 1. Tablet & Large Screens (Desktop se 992px tak)
+@media (max-width: 1200px) {
+  .dosingTable {
+
+    thead th,
+    tbody td,
+    .doseCell strong,
+    .doseCell span {
+      font-size: 16px !important; // Font thoda chota kiya taake columns fit ho sakein
+      padding: 20px 10px !important;
+    }
+  }
+}
+
+// 2. Medium Screens (Tablets - 768px to 991px)
+@media (max-width: 991px) {
+  .tableContainer {
+    overflow-x: auto; // Horizontal scroll enable kiya
+    -webkit-overflow-scrolling: touch;
+    border-radius: 20px;
+    margin-top: 20px;
+  }
+
+  .dosingTable {
+    width: 800px; // Table ki width fix rakhi taake scroll ho sake, content picche na ho
+    table-layout: auto; // Table ko content ke hisaab se adjust hone diya
+  }
+
+  .rightSection {
+    padding-left: 0 !important;
+  }
+}
+
+// 3. Small Mobile (Below 768px)
+@media (max-width: 767px) {
+  .dosingScheduleSection {
+    padding: 50px 0 !important;
+  }
+
+  .mainHeading {
+    font-size: 26px !important;
+    line-height: 1.2 !important;
+  }
+
+  .subHeading {
+    font-size: 14px !important;
+    padding-bottom: 30px !important;
+  }
+
+  .dosingCard {
+    padding: 20px 10px !important;
+    margin-bottom: 40px !important;
+  }
+
+  // Dose Cell Adjustments
+  .doseCell {
+
+    strong,
+    span {
+      font-size: 13px !important;
+    }
+  }
+
+  // Contact Card
+  .contactCard {
+    height: auto !important; // Fixed height 70px khatam ki
+    padding: 15px !important;
+
+    .contactText,
+    .contactLink {
+      font-size: 15px !important;
+      line-height: 1.4 !important;
+    }
+  }
+}
+
+// 4. Extra Small Mobile (Below 480px)
+@media (max-width: 480px) {
+  .mainHeading {
+    font-size: 22px !important;
+  }
+
+  .dosingTable {
+    width: 650px; // Mazeed narrow screens ke liye scroll bar maintain rakha
+  }
+}
+
+
+
+/* ======================================================
+   RESPONSIVE IMAGE HEIGHT & CARD ADJUSTMENTS
+   ====================================================== */
+
+@media (max-width: 991px) {
+
+  // Dosing Section ki images ke liye
+  .leftSection img {
+    width: 100% !important;
+    height: auto !important; // Fixed height khatam
+    max-width: 300px; // Tablet par image zyada phailay na
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 767px) {
+
+  // Patient Profile Section (jo pehle wala code tha)
+  .patientSection .patientImg,
+  .patientSection .clinicalImg {
+    height: auto !important; // Strictly auto
+    max-height: 280px; // Screen se bahar jane se roknay ke liye
+    object-fit: contain;
+    width: auto !important;
+    display: block;
+    margin: 0 auto 20px auto;
+  }
+
+  // Dosing Schedule images
+  .leftSection img {
+    max-width: 200px; // Mobile par image compact rakhi
+    height: auto !important;
+  }
+
+  // Dosing Card Background (agar image background mein hai)
+  .dosingCard {
+    background-size: cover !important;
+    height: auto !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .patientSection .patientImg {
+    max-height: 220px !important; // Bohat choti screens ke liye
+  }
+} 
+
+
+
+/* ======================================================
+   TABLE & HEIGHT RESPONSIVE FIXES
+   ====================================================== */
+
+@media (max-width: 992px) {
+  .rightSection {
+    padding-left: 0 !important;
+    width: 100% !important;
+  }
+
+  .tableContainer {
+    // Mobile par height control karne ke liye
+    max-height: 450px !important;
+    overflow-y: auto !important; // Vertical scroll agar rows zyada hon
+    overflow-x: auto !important; // Horizontal scroll agar columns phat rahe hon
+    -webkit-overflow-scrolling: touch;
+    border: 1.5px solid #77aa42;
+    border-radius: 15px !important;
+  }
+
+  .dosingTable {
+    width: 100% !important;
+    min-width: 600px; // Table ko collapse hone se rokne ke liye ek base width
+    table-layout: auto !important;
+
+    thead tr th {
+      padding: 12px 8px !important;
+      font-size: 14px !important; // Headers chote kar diye
+      height: auto !important;
+    }
+
+    tbody tr td {
+      padding: 10px 5px !important;
+      font-size: 13px !important; // Cells chote kar diye
+      height: auto !important;
+    }
+  }
+
+  // Table ke andar jo strong/span hain unka size
+  .doseCell {
+    strong {
+      font-size: 13px !important;
+    }
+
+    span {
+      font-size: 12px !important;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .tableContainer {
+    max-height: 400px !important; // Choti screens par mazeed kam height
+  }
+
+  .dosingTable {
+    min-width: 500px; // Thoda mazeed narrow kiya
+
+    thead tr th,
+    tbody tr td {
+      font-size: 12px !important; // Mobile par extreme small font
+      padding: 8px 4px !important;
+    }
+
+    .doseCell strong,
+    .doseCell span {
+      font-size: 11px !important;
+    }
+  }
+
+  // Header ki padding kam ki taake card ki height bache
+  .mainHeading {
+    font-size: 22px !important;
+    padding-bottom: 10px !important;
+  }
+
+  .subHeading {
+    font-size: 13px !important;
+    padding-bottom: 20px !important;
+  }
+}
+
+
+
+/* ======================================================
+   SPECIFIC TABLE CONTAINER FIX (MOBILE & TABLET)
+   ====================================================== */
+
+@media (max-width: 992px) {
+  .tableContainer {
+    max-height: 400px !important; // Height limit lagayi
+    margin: auto !important; // Center align kiya
+    width: 90% !important; // Dono sides se thori jagah chori
+    border-radius: 0px !important; // Round corners khatam kiye
+
+    overflow-y: auto !important; // Vertical scroll enable
+    overflow-x: auto !important; // Horizontal scroll enable
+    border: 1px solid #77aa42; // Border visible rakha taake boundary dikhe
+
+    // Custom Scrollbar styling (optional - looks cleaner)
+    &::-webkit-scrollbar {
+      width: 5px;
+      height: 5px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: #77aa42;
+      border-radius: 10px;
+    }
+  }
+
+  .dosingTable {
+    width: 100% !important;
+    min-width: 550px; // Table ko collapse hone se rokne ke liye
+
+    thead th,
+    tbody td {
+      font-size: 12px !important; // Fonts chote rakhe
+      padding: 10px 5px !important;
+      border-radius: 0px !important; // Cells se bhi radius hataya
+    }
+  }
+
+  .doseCell {
+
+    strong,
+    span {
+      font-size: 11px !important;
+    }
+  }
+}
+
+// Extra Small Devices
+@media (max-width: 480px) {
+  .tableContainer {
+    width: 95% !important; // Mazeed screen space utilize karne ke liye
+    max-height: 350px !important;
+  }
+}
+
+
+
+
+/* ======================================================
+   RESPONSIVE QUERIES (SEPARATE)
+   ====================================================== */
+
+// 1. Large Screens / Laptops (1024px and up)
+@media (min-width: 1024px) {
+  .rightSection {
+    padding-left: 40px;
+  }
+}
+
+// 2. Tablets & Small Laptops (768px to 1023px)
+@media (max-width: 1023px) {
+  .dosingScheduleSection {
+    padding: 60px 0;
+  }
+
+  .mainHeading {
+    font-size: 36px;
+  }
+
+  .subHeading {
+    font-size: 18px;
+    padding-bottom: 40px;
+  }
+
+  .leftSection {
+    margin-bottom: 40px;
+    text-align: center;
+
+    img {
+      max-width: 250px;
+    }
+  }
+
+  .dosingTable {
+    thead th {
+      padding: 15px;
+      font-size: 16px;
+    }
+
+    tbody td {
+      padding: 12px;
+      font-size: 14px;
+    }
+  }
+
+  .doseCell {
+
+    strong,
+    span {
+      font-size: 14px;
+    }
+  }
+}
+
+// 3. Mobile Devices (Below 768px)
+@media (max-width: 767px) {
+  .dosingScheduleSection {
+    padding: 40px 0;
+  }
+
+  .mainHeading {
+    font-size: 28px;
+    line-height: 1.2;
+  }
+
+  .subHeading {
+    font-size: 15px;
+  }
+
+  .dosingCard {
+    padding: 30px 15px;
+    margin-bottom: 40px;
+  }
+
+  .tableContainer {
+    overflow-x: auto; // Mobile par horizontal scroll enable
+    border-radius: 15px;
+  }
+
+  .dosingTable {
+    min-width: 500px; // Collapse hone se rokne ke liye
+
+    thead th {
+      padding: 12px 8px;
+      font-size: 14px;
+    }
+
+    tbody td {
+      padding: 10px 5px;
+      font-size: 13px;
+    }
+  }
+
+  .contactText,
+  .contactLink {
+    font-size: 16px;
+  }
+}
+
+// 4. Extra Small Mobile (Below 480px)
+@media (max-width: 480px) {
+  .mainHeading {
+    font-size: 24px;
+  }
+
+  .dosingCard {
+    background-image: none !important; // Choti screen par background color use karein image ki jagah
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    background: #4d7a25;
+    padding: 20px 10px;
+  }
+
+  .tableContainer {
+    max-height: 400px; // Vertical scroll if needed
+    overflow-y: auto;
+  }
+}

@@ -1,0 +1,414 @@
+.biosimilaritySection {
+  padding: 100px 0;
+  background: url("../../../assets/images/png/biosimilarityBG.png") center /
+    cover no-repeat;
+}
+
+// Header Styles
+.mainHeading {
+  color: #222;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 55px;
+  padding-bottom: 20px;
+
+  @media (max-width: 768px) {
+    font-size: 28px;
+  }
+}
+
+.subHeading {
+  color: #313131;
+  text-align: center;
+  font-family: "Satoshi-Regular";
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-bottom: 70px;
+
+  @media (max-width: 768px) {
+    font-size: 14px;
+    padding-bottom: 35px;
+  }
+}
+
+// Approval Steps Row
+.approvalStepsRow {
+  margin-bottom: 40px;
+}
+
+// Step Card
+.stepCard {
+  padding: 33px;
+  height: 100%;
+  min-height: 424px;
+  border-radius: 30px;
+  background: #fff;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 19px;
+
+  @media (max-width: 768px) {
+    padding: 25px 20px;
+    min-height: 350px;
+  }
+}
+
+.stepTitle {
+  color: #222;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+
+  @media (max-width: 768px) {
+    font-size: 16px;
+    min-height: 45px;
+  }
+}
+
+.arrowContainer {
+  width: 31.184px;
+  height: 48.73px;
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.checkmarkContainer {
+  width: 23.061px;
+  height: 23.061px;
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.stepSubtitle {
+  color: #222;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+
+  @media (max-width: 768px) {
+    font-size: 13px;
+  }
+}
+
+// Brand Logo
+.brandLogo {
+  width: 159px;
+  height: 78px;
+  aspect-ratio: 53/26;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+
+    @media (max-width: 768px) {
+width: 100%;
+  height: 71%;
+  object-fit: contain;
+      }
+  }
+}
+
+// Carousel Section
+.carouselRow {
+  margin-top: 40px;
+}
+
+.carouselContainer {
+  position: relative;
+  width: 100%;
+  padding: 0;
+  overflow: visible;
+}
+
+.benefitsCarousel {
+  border-radius: 60px;
+  min-height: 360px;
+  height: 100%;
+  padding: 60px 40px;
+  box-shadow: 0 8px 32px rgba(13, 92, 88, 0.3);
+  display: flex;
+  align-items: center;
+
+  @media (max-width: 768px) {
+    padding: 40px 25px;
+    border-radius: 24px;
+  }
+}
+
+// Benefit Items
+.benefitItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.middleCol {
+    border-left: 1px solid #fff;
+    border-right: 1px solid #fff;
+}
+
+.benefitIcon {
+  width: 80px;
+  height: 80px;
+
+  svg {
+    width: 100%;
+    height: 100%;
+  }
+
+  @media (max-width: 768px) {
+    width: 64px;
+    height: 64px;
+    margin-bottom: 15px;
+  }
+}
+
+.benefitText {
+  color: #fff;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 31.2px */
+  margin: 0;
+
+  @media (max-width: 768px) {
+    font-size: 14px;
+  }
+}
+
+// Carousel Buttons
+.carouselButton {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 10;
+  background: none;
+
+  svg {
+    width: 100%;
+    height: 100%;
+  }
+
+  @media (max-width: 768px) {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.prevButton {
+  left: -70px;
+}
+
+.nextButton {
+  right: -70px;
+}
+
+// Responsive adjustments
+@media (max-width: 992px) {
+  .biosimilaritySection {
+    padding: 40px 0;
+  }
+
+  .stepCard {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .biosimilaritySection {
+    padding: 30px 0;
+  }
+
+  .benefitsCarousel {
+    min-height: auto;
+  }
+
+  .benefitItem {
+    margin-bottom: 30px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .mainHeading {
+    font-size: 24px;
+  }
+
+  .subHeading {
+    font-size: 13px;
+  }
+
+  .carouselContainer {
+    padding: 0 40px;
+  }
+}
+
+// Print styles
+@media print {
+  .biosimilaritySection {
+    background: white;
+  }
+
+  .stepCard,
+  .benefitsCarousel {
+    box-shadow: none;
+    border: 1px solid #ddd;
+  }
+
+  .carouselButton {
+    display: none;
+  }
+}
+
+
+
+
+
+
+
+
+/* --- Responsive Media Queries --- */
+
+@media (max-width: 1200px) {
+  .prevButton {
+    left: 10px;
+  }
+
+  .nextButton {
+    right: 10px;
+  }
+
+  .carouselContainer {
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 992px) {
+  .biosimilaritySection {
+    padding: 60px 0;
+  }
+
+  .mainHeading {
+    font-size: 36px;
+  }
+
+  .stepCard {
+    min-height: 380px;
+  }
+}
+
+@media (max-width: 768px) {
+  .biosimilaritySection {
+    padding: 40px 0;
+  }
+
+  .mainHeading {
+    font-size: 28px;
+    line-height: 1.2;
+  }
+
+  .subHeading {
+    font-size: 16px;
+    padding-bottom: 40px;
+  }
+
+  .stepCard {
+    padding: 25px;
+    min-height: 320px;
+  }
+
+  .stepTitle {
+    font-size: 20px;
+  }
+
+  .stepSubtitle {
+    font-size: 16px;
+  }
+
+  .benefitsCarousel {
+    border-radius: 30px;
+    padding: 40px 20px;
+  }
+
+  // Switches side borders to top/bottom borders for stacked mobile view
+  .middleCol {
+    border-left: none;
+    border-right: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 30px 0;
+    margin: 20px 0;
+  }
+
+  .benefitText {
+    font-size: 18px;
+  }
+
+  .benefitIcon {
+    width: 60px;
+    height: 60px;
+  }
+
+  .carouselButton {
+    width: 35px;
+    height: 35px;
+
+    svg {
+      width: 18px;
+      height: 18px;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .mainHeading {
+    font-size: 24px;
+  }
+
+  .subHeading {
+    font-size: 14px;
+  }
+
+  .carouselButton {
+    background: white; // Easier to see on small screens
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  }
+}

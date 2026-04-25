@@ -1,0 +1,371 @@
+.wraper {
+    width: 100%;
+
+
+    .tableResponsive {
+        margin-top: 30px;
+        border-radius: 25px; // Round corners for the whole table
+        overflow: hidden; // Critical for rounded corners to work
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+        width: 70%;
+        overflow-y: scroll;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+    }
+
+    .doseTable {
+        width: 100%;
+        border-collapse: collapse;
+        background-color: #fff;
+        font-family: 'inter-regular', sans-serif;
+
+        thead {
+            background-color: #003d3d; // Dark teal header from image
+            color: #ffffff;
+
+            th {
+                padding: 20px;
+                font-weight: 500;
+                font-size: 18px;
+                text-align: center;
+                border: 1px solid rgba(255, 255, 255, 0.1);
+            }
+        }
+
+        tbody {
+            tr {
+                border-bottom: 1px solid #eef2f6;
+
+                &:last-child {
+                    border-bottom: none;
+                }
+
+                td {
+                    padding: 25px 20px;
+                    color: #555;
+                    font-size: 16px;
+                    text-align: center;
+                    border-right: 1px solid #eef2f6;
+                    line-height: 1.4;
+
+                    &:last-child {
+                        border-right: none;
+                    }
+                }
+            }
+        }
+    }
+
+    .headerArea {
+        h2 {
+            color: #222;
+            text-align: center;
+            font-family: 'inter-regular';
+            font-size: 48px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 55px;
+            margin-bottom: 20px !important;
+
+        }
+    }
+
+    :global(.nav-pills) {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        flex-wrap: nowrap;
+    }
+
+    :global(.nav-item) {
+        a {
+            display: flex;
+            width: 190px;
+            color: #222;
+            text-align: center;
+            font-family: 'figtree-regular';
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            padding: 10px;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            border-radius: 0 20px;
+            background: #EBF3FB;
+            margin-right: 20px !important;
+        }
+    }
+
+    :global(.nav-link.active) {
+        border-radius: 0 20px !important;
+        background: linear-gradient(0deg, #78A941 0%, #78A941 100%), #78A941 !important;
+        color: #FFF;
+        text-align: center;
+        font-family: 'figtree-regular';
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin-right: 20px !important;
+    }
+
+
+    .imgBox {
+        width: 100%;
+        height: 664px !important;
+        overflow: hidden;
+        // background-color: #EBF3FB !important;
+
+        @media (min-width : 2800px) and (max-width : 3200px) {
+            height: 1350px !important;
+        }
+
+        @media (min-width : 2400px) and (max-width : 2800px) {
+            height: 1050px !important;
+        }
+
+        @media (min-width : 2000px) and (max-width : 2400px) {
+            height: 1050px !important;
+        }
+
+        @media (min-width : 1600px) and (max-width : 2000px) {
+            height: 900px !important;
+        }
+
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover !important;
+
+        }
+
+        h3 {
+            color: #222;
+            font-family: 'inter-regular';
+            font-size: 48px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 55px;
+        }
+    }
+
+    .imgBox11 {
+        width: 100%;
+        height: 664px !important;
+        overflow: hidden;
+        padding: 60px 0px;
+        background-color: #EBF3FB !important;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        padding-left: 80px;
+
+
+
+        @media (min-width : 2800px) and (max-width : 3200px) {
+            height: 1350px !important;
+        }
+
+        @media (min-width : 2400px) and (max-width : 2800px) {
+            height: 1050px !important;
+        }
+
+        @media (min-width : 2000px) and (max-width : 2400px) {
+            height: 1050px !important;
+        }
+
+        @media (min-width : 1600px) and (max-width : 2000px) {
+            height: 900px !important;
+        }
+
+        img {
+            width: 505px !important;
+            object-fit: contain;
+            height: 100%;
+            margin-top: 20px;
+        }
+
+        h3 {
+            color: #222;
+            font-family: 'inter-regular';
+            font-size: 48px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 55px;
+        }
+    }
+
+    .rightSec {
+        background-color: #EBF3FB !important;
+    }
+}
+
+
+
+
+/* =============================================
+   TABLE & TABS RESPONSIVE REFINEMENT
+   ============================================= */
+
+// 1. LAPTOP & SMALL DESKTOP (1025px - 1440px)
+@media screen and (max-width: 1440px) {
+    .wraper {
+        .tableResponsive {
+            width: 85%;
+        }
+
+        .imgBox11 {
+            padding-left: 40px;
+        }
+    }
+}
+
+// 2. TABLET VIEW (769px - 1024px)
+@media screen and (max-width: 1023px) {
+    .wraper {
+        .headerArea h2 {
+            font-size: 36px;
+        }
+
+        .tableResponsive {
+            width: 95%;
+            margin-top: 20px;
+        }
+
+        :global(.nav-item) a {
+            width: 170px;
+            font-size: 18px;
+        }
+
+        .imgBox,
+        .imgBox11 {
+            height: 500px !important;
+            padding-left: 30px;
+
+            h3 {
+                font-size: 32px;
+            }
+        }
+    }
+}
+
+// 3. MOBILE VIEW (Up to 768px)
+@media screen and (max-width: 768px) {
+    .wraper {
+        padding: 0 10px;
+
+        .headerArea h2 {
+            font-size: 24px;
+            line-height: 1.3;
+            margin-bottom: 25px !important;
+        }
+
+        /* Tabs Mobile Scroll Logic */
+        :global(.nav-pills) {
+            flex-wrap: nowrap !important;
+            overflow-x: auto !important;
+            padding-bottom: 15px;
+            -webkit-overflow-scrolling: touch;
+            gap: 10px;
+
+            &::-webkit-scrollbar {
+                height: 4px;
+                display: block; // Mobile par scrollbar dikhana behtar hai
+            }
+
+            &::-webkit-scrollbar-thumb {
+                background: #ccc;
+                border-radius: 10px;
+            }
+        }
+
+        :global(.nav-item) a {
+            width: 140px !important;
+            font-size: 15px !important;
+            margin-right: 0 !important;
+            white-space: nowrap;
+            padding: 8px 12px;
+            border-radius: 0 15px;
+        }
+
+        /* Table Mobile Optimization */
+        .tableResponsive {
+            width: 100%;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+
+            .doseTable {
+                min-width: 600px; // Table content readable rahega
+
+                thead th {
+                    padding: 15px 10px;
+                    font-size: 14px;
+                }
+
+                tbody td {
+                    padding: 15px 10px;
+                    font-size: 13px;
+                }
+            }
+        }
+
+        /* Boxes / Images Mobile Fix */
+        .imgBox,
+        .imgBox11 {
+            height: auto !important;
+            min-height: 300px;
+            padding: 40px 20px !important;
+            width: 100%;
+            margin-bottom: 20px;
+            text-align: center;
+            align-items: center;
+
+            h3 {
+                font-size: 22px;
+                line-height: 1.4;
+                margin-top: 15px;
+            }
+
+            img {
+                max-width: 100%;
+                height: auto;
+            }
+        }
+
+        .rightSec {
+            margin-top: 10px;
+        }
+    }
+}
+
+// 4. VERY SMALL MOBILE (Under 400px)
+@media screen and (max-width: 400px) {
+    .wraper {
+        .headerArea h2 {
+            font-size: 20px;
+        }
+
+        :global(.nav-item) a {
+            width: 120px !important;
+            font-size: 13px !important;
+        }
+
+        .imgBox h3 {
+            font-size: 18px;
+        }
+    }
+}
+
+
+.imgBox {
+    img {
+        object-fit: contain !important;
+        height: 100% !important;
+    }
+}

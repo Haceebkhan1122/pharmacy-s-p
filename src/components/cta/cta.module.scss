@@ -1,0 +1,459 @@
+.ctaBox {
+  // padding-bottom: 100px;
+  margin-top: 120px;
+  margin-bottom: 100px;
+
+  @media (min-width: 0) and (max-width: 767px) {
+    margin-top: 40px;
+  }
+
+  .boxCta {
+    position: relative;
+    overflow: visible;
+    border-radius: 28px;
+    // padding: 22px 0px 0 0px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 220px;
+    background: url(../../assets/images/svg/bannerCta.png);
+    color: #fff;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 40px;
+
+    /* background image wrapper (next/image fill) */
+    .bgSvg {
+      position: absolute;
+      inset: 0;
+      z-index: 1;
+      pointer-events: none;
+      opacity: 0.12;
+      /* match the subtle decorative look */
+    }
+
+    .content {
+
+      @media(min-width:769px) and (max-width: 1023px) {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      /* room for overlapping doctor */
+    }
+
+    .textCol {
+      flex: 1;
+      padding-top: 60px;
+
+      @media (min-width: 768px) and (max-width: 1023px) {
+        padding-top: 0px;
+      }
+
+      .first_step {
+        margin-bottom: 12px !important;
+
+
+        @media(min-width:769px) and (max-width: 1023px) {
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 300;
+          line-height: 36px;
+          margin-bottom: 12px;
+        }
+
+        @media (max-width: 767px) and (min-width: 320px) {
+          text-align: center;
+          margin-bottom: 0 !important;
+        }
+
+
+      }
+
+      p {
+        color: #FFF;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 56px;
+        /* 233.333% */
+        margin-bottom: 12px !important;
+
+        @media (max-width: 1200px) {
+          font-size: 22px !important;
+        }
+
+        @media (max-width: 1200px) {
+          font-size: 22px !important;
+        }
+
+        @media (max-width: 767px) and (min-width: 320px) {
+          font-size: 16px !important;
+          text-align: center;
+        }
+      }
+
+      h2 {
+        color: #FFF;
+        font-size: 42px !important;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 56px;
+        /* 133.333% */
+        text-align: left;
+        margin-bottom: 40px !important;
+
+        @media (min-width: 1201px)and (max-width: 1450px) {
+          font-size: 38px !important;
+        }
+
+        @media (max-width: 1200px) {
+          font-size: 32px !important;
+        }
+
+        @media(min-width:1024px) and (max-width: 1250px) {
+          font-size: 30px !important;
+          margin-bottom: 0 !important;
+        }
+
+        @media (min-width: 768px) and (max-width: 1023px) {
+          font-size: 30px !important;
+          margin-bottom: 0 !important;
+        }
+      }
+
+      button {
+        border-radius: 10px;
+        background: #FFF;
+        display: flex;
+        width: 351px;
+        height: 67px;
+        padding: 15.656px 28.195px;
+        align-items: center;
+        gap: 11.183px;
+        color: #222;
+        text-align: center;
+        font-size: 26.84px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        border: 0;
+        transition: 0.5s;
+
+        @media (max-width: 1200px) {
+          width: 300px !important;
+          height: 50px !important;
+          padding: 15.656px 28.195px !important;
+          font-size: 22px !important;
+          margin-bottom: 1rem !important;
+        }
+
+        @media (min-width: 1024px) and (max-width: 1250px) {
+          width: auto;
+          height: 50px;
+          font-size: 20px;
+          margin: auto;
+          margin-bottom: 0 !important;
+        }
+
+        @media (min-width: 768px) and (max-width: 1023px) {
+          width: auto;
+          height: 50px;
+          font-size: 20px;
+          margin: auto;
+          margin-bottom: 0 !important;
+        }
+
+        &:hover {
+          background: linear-gradient(269deg, rgba(255, 255, 255, 0) 0.51%, rgba(255, 255, 255, 0.35) 99.49%), #6ECA0D;
+          background-blend-mode: soft-light, normal;
+          color: #fff;
+        }
+      }
+    }
+
+    /* doctor wrapper: absolute overlap on the right */
+    .doctorWrap {
+      // position: absolute;
+      // right: -36px;
+      // bottom: 0;
+      // top: 12px;
+      // z-index: 4;
+      // display: flex;
+      // align-items: flex-end;
+      // pointer-events: none;
+
+
+      img {
+        width: 426px !important;
+        height: 357px !important;
+        width: auto;
+        display: block;
+
+        @media (max-width: 1200px) {
+          width: 393px !important;
+          height: 329px !important;
+        }
+
+
+      }
+    }
+  }
+}
+
+/* Medium screens */
+@media (max-width: 991px) {
+  .ctaBox {
+    .boxCta {
+      padding: 36px 24px;
+      min-height: 200px;
+      border-radius: 20px;
+
+      .content {
+        padding-right: 0;
+      }
+
+      .doctorWrap {
+        right: -14px;
+      }
+
+      .textCol h2 {
+        font-size: 24px;
+      }
+
+      // .textCol button {
+      //   width: 200px;
+      //   height: 44px;
+      //   font-size: 15px;
+      // }
+    }
+  }
+}
+
+/* Small screens: stack vertically and move doctor below */
+@media (max-width: 575px) {
+  .ctaBox {
+    .boxCta {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 22px 16px;
+      min-height: auto;
+
+      .content {
+        padding-right: 0;
+      }
+
+      .textCol h2 {
+        font-size: 25px !important;
+        padding-bottom: 12px !important;
+        margin-bottom: 0 !important;
+        line-height: 35px !important;
+      }
+
+      .textCol button {
+        width: 100% !important;
+        max-width: 210px;
+        justify-content: center;
+        height: 50px;
+        font-size: 16px !important;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 15.656px 10.195px;
+
+        @media(min-width:1024px) and (max-width: 1250px) {
+
+          margin: 0px !important;
+        }
+
+        @media(min-width:769px) and (max-width: 1023px) {
+
+          margin: 0px !important;
+        }
+      }
+    }
+  }
+}
+
+.textCol {
+  button {
+
+    @media(min-width:1024px) and (max-width: 1250px) {
+
+      margin: 0px !important;
+    }
+
+    @media(min-width:769px) and (max-width: 1023px) {
+
+      margin: 0px !important;
+    }
+
+    @media(min-width:0) and (max-width:767px) {
+      max-width: unset !important;
+    }
+
+  }
+
+  .first_step {
+    @media(min-width:0) and (max-width:767px) {
+      line-height: 24px;
+    }
+  }
+
+
+  p {
+    @media(min-width:1024px) and (max-width: 1250px) {
+      font-size: 18px;
+      font-style: normal;
+      line-height: 30px !important;
+      margin-bottom: 12px;
+    }
+
+
+    @media(min-width:769px) and (max-width: 1023px) {
+      font-size: 18px;
+      font-style: normal;
+      line-height: 30px !important;
+      margin-bottom: 12px;
+    }
+
+    @media(min-width:0) and (max-width:767px) {
+      line-height: 28px !important;
+      font-size: 18px !important;
+    }
+  }
+}
+
+
+@media(min-width:0) and (max-width:767px) {
+  .ctaBox {
+    padding-bottom: 50px !important;
+  }
+
+  .textCol {
+    padding-top: 0 !important;
+  }
+}
+
+:global(.urdu) {
+
+  .content {
+    direction: rtl;
+  }
+
+  .ctaBox {
+    // padding-bottom: 100px;
+
+    .boxCta {
+
+      .textCol {
+        padding-top: 30px;
+
+        @media (min-width: 768px) and (max-width: 1023px) {
+          padding-top: 0;
+          text-align: center;
+        }
+
+        h2 {
+          color: #FFF;
+          font-size: 52px !important;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 70px !important;
+          /* 133.333% */
+          text-align: left;
+          margin-bottom: 15px !important;
+
+          @media (min-width: 1201px)and (max-width: 1450px) {
+            line-height: 50px !important;
+            font-size: 38px !important;
+          }
+
+          @media (min-width: 1024px)and (max-width: 1200px) {
+            line-height: 50px !important;
+            font-size: 32px !important;
+          }
+
+          @media (min-width: 768px) and (max-width: 1023px) {
+            font-size: 40px !important;
+            text-align: center !important;
+            margin-bottom: 0 !important;
+          }
+
+          @media (min-width: 320px) and (max-width: 767px) {
+            font-size: 26px !important;
+            text-align: center !important;
+            line-height: 45px !important;
+            margin-bottom: 0 !important;
+          }
+        }
+
+        p {
+          font-family: 'jameel noori nastaleeq';
+
+          @media (max-width: 1023px) and (min-width: 768px) {
+            text-align: center;
+          }
+
+          @media (min-width: 320px) and (max-width: 767px) {
+            font-size: 20px !important;
+
+          }
+        }
+      }
+
+      /* doctor wrapper: absolute overlap on the right */
+      .doctorWrap {
+        // position: absolute;
+        // right: -36px;
+        // bottom: 0;
+        // top: 12px;
+        // z-index: 4;
+        // display: flex;
+        // align-items: flex-end;
+        // pointer-events: none;
+
+
+        img {
+          width: 426px !important;
+          height: 357px !important;
+          width: auto;
+          display: block;
+        }
+      }
+    }
+  }
+
+  .first_step {
+    text-align: right !important;
+    color: #FFF;
+    font-family: 'Jameel Noori Nastaleeq' !important;
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 56px;
+    /* 133.333% */
+
+    p {}
+  }
+
+  .first_consultation_butn {
+    color: #222;
+    text-align: center !important;
+    font-family: 'Jameel Noori Nastaleeq';
+    font-size: 27px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    justify-content: center;
+  }
+
+  .butn {
+    justify-content: center;
+  }
+
+
+
+}

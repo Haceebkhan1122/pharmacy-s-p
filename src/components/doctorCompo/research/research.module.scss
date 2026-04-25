@@ -1,0 +1,386 @@
+.researchSection {
+    padding: 80px 0;
+    background-color: #ffffff;
+
+    .headerArea {
+        text-align: center;
+        margin-bottom: 60px;
+
+        h2 {
+            color: #222;
+            text-align: center;
+            font-family: 'inter-regular';
+            font-size: 48px;
+            font-style: normal;
+            font-weight: 400 !important;
+            line-height: 55px;
+            /* 114.583% */
+            margin-bottom: 15px;
+        }
+
+        p {
+            color: #222;
+            text-align: center;
+            font-family: 'inter-regular';
+            margin-top: 20px !important;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 300 !important;
+            line-height: 55px;
+            /* 114.583% */
+        }
+    }
+
+    .studyCard {
+        background-color: #EBF5FB;
+        padding: 40px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        border-radius: 40px 40px 40px 0;
+        transition: transform 0.3s ease;
+
+        &:nth-child(2) {}
+
+        &:hover {}
+
+        .journalName {
+            color: rgba(0, 0, 0, 0.70);
+            font-family: 'inter-regular';
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;
+        }
+
+        h3 {
+            color: #000;
+            font-family: 'inter-regular';
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 32px;
+            /* 114.286% */
+        }
+
+        .date {
+            font-family: 'inter-regular';
+            font-size: 16px;
+            color: #666;
+            display: block;
+            margin-bottom: 30px;
+        }
+
+        .viewBtn {
+            display: flex;
+            width: 200px;
+            height: 50px;
+            padding: 10px 20px;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            border-radius: 15px;
+            border: 1px solid #222;
+            background: #FFF;
+            color: #222;
+            font-family: 'inter-regular';
+            font-size: 22px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+
+            &:hover {
+                opacity: 0.9;
+            }
+        }
+    }
+
+    .mainLearnMore {
+        width: 346px;
+        height: 55px;
+        background: #006CB0;
+        color: #fff;
+        border: none;
+        border-radius: 10px;
+        font-family: 'inter-regular-Medium';
+        font-size: 24px;
+        font-weight: 500;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: background 0.3s;
+
+        &:hover {
+            background-color: #005a8c;
+        }
+    }
+}
+
+// Mobile Adjustments
+@media (max-width: 768px) {
+    .researchSection {
+        .headerArea h2 {
+            font-size: 32px;
+        }
+
+        .studyCard {
+            padding: 25px;
+            border-radius: 20px;
+        }
+
+        .mainLearnMore {
+            width: 100%;
+            max-width: 346px;
+        }
+    }
+}
+
+
+.viewBtnDownload {
+    border-radius: 15px;
+    background: #78A941;
+    color: #FFF;
+    font-family: 'inter-medium';
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    display: flex;
+    width: 200px;
+    height: 50px;
+    padding: 10px 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border: none;
+    outline: none;
+    white-space: nowrap;
+}
+
+
+
+/* --- Desktop Styles (Original) Yahan Hoga --- */
+/* ... (Aapka existing researchSection code) ... */
+
+// ==========================================
+// TABLET VIEW (Max-width: 992px)
+// ==========================================
+@media (max-width: 992px) {
+    .researchSection {
+        padding: 60px 20px;
+
+        .headerArea {
+            margin-bottom: 40px;
+
+            h2 {
+                font-size: 38px;
+                line-height: 45px;
+            }
+
+            p {
+                font-size: 20px;
+                line-height: 30px; // Line height kam ki hai taake gap normal lage
+            }
+        }
+
+        .studyCard {
+            h3 {
+                font-size: 20px;
+                line-height: 28px;
+            }
+        }
+    }
+}
+
+// ==========================================
+// TABLET & MOBILE BUTTON FIXES
+// ==========================================
+
+@media (max-width: 992px) {
+
+    .viewBtn,
+    .viewBtnDownload {
+        // Tablet par buttons thoday chotay
+        font-size: 16px !important;
+        width: 180px !important;
+    }
+}
+
+@media (max-width: 768px) {
+
+    // Parent container handling
+    .buttonContainer {
+        width: 100%;
+        gap: 15px !important; // Bootstrap gap-5 bohat zyada hai mobile ke liye
+    }
+
+    .viewBtn,
+    .viewBtnDownload {
+        width: 100% !important; // Mobile par buttons full width
+        height: 50px !important;
+        font-size: 18px !important;
+        white-space: normal !important; // Agar text lamba ho to wrap ho jaye
+        text-align: center;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .viewBtn,
+    .viewBtnDownload {
+        font-size: 16px !important;
+        padding: 10px 15px !important;
+    }
+}
+
+
+/* ==========================================
+   RESPONSIVE QUERIES (Bottom of file)
+   ========================================== */
+
+// TABLET & IPAD (Large Screens & Mini)
+@media (max-width: 992px) {
+    .researchSection {
+        padding: 60px 20px;
+
+        .headerArea {
+            margin-bottom: 40px;
+
+            h2 {
+                font-size: 38px;
+                line-height: 45px;
+            }
+
+            p {
+                font-size: 20px;
+                line-height: 32px;
+                margin-top: 15px !important;
+            }
+        }
+
+        .studyCard {
+            padding: 30px;
+
+            h3 {
+                font-size: 20px;
+                line-height: 28px;
+            }
+        }
+
+        .viewBtn,
+        .viewBtnDownload {
+            width: 170px !important;
+            font-size: 16px !important;
+            height: 45px !important;
+        }
+
+        .mainLearnMore {
+            width: 300px;
+            font-size: 20px;
+        }
+    }
+}
+
+// MOBILE (Phones & Small Tablets)
+@media (max-width: 768px) {
+    .researchSection {
+        padding: 40px 15px;
+
+        .headerArea {
+            h2 {
+                font-size: 28px;
+                line-height: 34px;
+            }
+
+            p {
+                font-size: 18px;
+                line-height: 26px;
+            }
+        }
+
+        .studyCard {
+            padding: 25px;
+            border-radius: 25px 25px 25px 0;
+            margin-bottom: 20px; // Spacing between stacked cards
+
+            h3 {
+                font-size: 19px;
+            }
+        }
+
+        // Full width buttons for mobile touch-targets
+        .viewBtn,
+        .viewBtnDownload {
+            width: 100% !important;
+            font-size: 18px !important;
+            height: 50px !important;
+            margin-bottom: 10px;
+        }
+
+        .mainLearnMore {
+            width: 100%;
+            max-width: 100%;
+            font-size: 18px;
+        }
+    }
+}
+
+// SMALL MOBILE (iPhone SE / Small Screens)
+@media (max-width: 480px) {
+    .researchSection {
+        .headerArea h2 {
+            font-size: 24px;
+        }
+
+        .studyCard h3 {
+            font-size: 17px;
+        }
+    }
+}
+
+
+/* ==========================================
+   LAPTOP & LARGE TABLET FIX (1001px to 1300px)
+   ========================================== */
+@media (max-width: 1300px) and (min-width: 1001px) {
+    .researchSection {
+        padding: 60px 40px;
+
+        .headerArea {
+            h2 {
+                font-size: 40px; // Slightly smaller to prevent awkward wrapping
+                line-height: 48px;
+            }
+
+            p {
+                font-size: 22px;
+                line-height: 40px;
+            }
+        }
+
+        .studyCard {
+            padding: 30px; // Reduce padding to give text more room
+
+            h3 {
+                font-size: 21px; // Prevents the card height from exploding
+                line-height: 28px;
+            }
+
+            .viewBtn,
+            .viewBtnDownload {
+                width: 160px !important; // Narrower buttons so they stay side-by-side
+                font-size: 16px !important;
+                padding: 10px 5px !important;
+            }
+        }
+
+        .mainLearnMore {
+            width: 300px;
+            font-size: 20px;
+        }
+    }
+}
+
+/* Include your existing 992px, 768px, and 480px queries below this */

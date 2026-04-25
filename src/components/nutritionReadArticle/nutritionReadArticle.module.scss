@@ -1,0 +1,11 @@
+.nutritionReadArticle {
+    padding: 120px 0;
+
+    @media (max-width: 1024px) and (min-width: 768px) {
+        padding: 80px 0;
+    }
+
+    @media (max-width: 767px) and (min-width: 0px) {
+        padding: 50px 0;
+    }
+}

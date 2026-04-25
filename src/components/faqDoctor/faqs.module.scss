@@ -1,0 +1,195 @@
+ .faqSection {
+
+   @media(min-width:768px) and (max-width:1023px) {
+     padding-top: 60px !important;
+   }
+
+   @media(min-width:0) and (max-width:767px) {
+     padding-top: 0px !important;
+   }
+
+   .headingTop {
+     margin-bottom: 48px !important;
+     text-align: left;color: #000 !important;
+
+     @media(min-width:768px) and (max-width:1023px) {
+       margin-bottom: 0 !important;
+       font-size: 30px !important;
+     }
+
+     @media(min-width:0) and (max-width:767px) {
+       margin-bottom: 10px !important;
+       margin-top: 0px !important;
+       text-align: center;
+       font-size: 24px !important;
+     }
+   }
+
+   p {
+     span {
+       font-family: "Figtree-Regular";
+       font-size: 22px !important;
+
+       @media(min-width:0) and (max-width:767px) {
+         color: #0F345A !important;
+         font-size: 16px !important;
+         line-height: normal;
+       }
+     }
+   }
+
+   .accordion-item {
+     border: 0 !important;
+   }
+
+   .accordianCustom {
+     .accordianCustomHeader {
+
+
+       button {
+         border: 0 !important;
+         line-height: normal;
+         color: #000 !important;
+         font-family: 'Figtree-Medium';
+         font-size: 28px;
+         line-height: normal;
+         padding: 24px 0;
+
+         &:focus {
+           box-shadow: initial !important;
+         }
+
+         @media(min-width:768px) and (max-width:1023px) {
+           font-size: 18px;
+         }
+
+         @media(min-width:0) and (max-width:767px) {
+           font-size: 16px;
+           padding: 14px 0;
+           padding-bottom: 21px !important;
+         }
+
+         &::after {}
+
+         @media(min-width:1301px) and (max-width:1919px) {
+           font-size: 22px;
+           font-weight: 500;
+         }
+       }
+
+     }
+
+     .accordianCustomBody {
+
+       line-height: normal;
+       color: #000 !important;
+        font-family: "Inter", sans-serif;
+       font-size: 20px !important;
+       line-height: normal;
+       padding: 0 0 20px 0;
+
+       @media(min-width:1301px) and (max-width:1919px) {
+         font-size: 20px;
+       }
+
+       @media(min-width:768px) and (max-width:1023px) {
+         font-size: 15px;
+       }
+
+       @media(min-width:320px) and (max-width:768px) {
+         font-size: 14px;
+         line-height: 20px;
+       }
+
+    @media(min-width:0px) and (max-width:768px) {
+      font-size: 13px !important;
+      line-height: 20px;
+    }
+     }
+   }
+ }
+
+
+ :global(.urdu) {
+   .headingTop {
+     color: #000 !important;
+     text-align: right;
+     font-family: 'Jameel Noori Nastaleeq' !important;
+     font-size: 48px;
+     font-style: normal;
+     font-weight: 500;
+     line-height: 55px;
+
+     @media(min-width:768px) and (max-width:1023px) {
+       margin-bottom: 0 !important;
+       font-size: 35px !important;
+     }
+
+     @media (max-width: 767px) and (mix-width: 320px) {
+       font-size: 28px !important;
+     }
+
+     /* 114.583% */
+   }
+
+   .accordianContainer {
+     direction: rtl;
+   }
+
+   .accordianCustom {
+     .accordianCustomBody {
+       font-family: 'Jameel Noori Nastaleeq' !important;
+       font-size: 30px;
+
+       @media (max-width: 1023px) and (min-width: 768px) {
+         font-size: 20px !important;
+         line-height: 40px !important;
+       }
+
+       @media (min-width: 320px) and (max-width: 767px) {
+         font-size: 18px !important;
+         line-height: 32px;
+       }
+     }
+
+     .accordianCustomHeader {
+
+       button {
+         justify-content: space-between;
+
+         @media(min-width:768px) and (max-width:1023px) {
+           font-size: 18px;
+           padding-bottom: 15px;
+         }
+
+         @media(min-width:0) and (max-width:767px) {
+           font-size: 16px;
+           padding: 14px 0;
+           padding-bottom: 14px !important;
+         }
+
+         &::after {
+           margin-left: 0 !important;
+           height: 1rem;
+           width: 1rem;
+           background-size: 1rem;
+         }
+
+         .accordionTitle {
+           font-family: 'Jameel Noori Nastaleeq' !important;
+           text-align: start;
+           font-size: 26px;
+
+           @media (min-width: 320px) and (max-width: 767px) {
+             font-size: 20px !important;
+
+             span {
+               color: black !important;
+               font-size: 16px !important;
+             }
+           }
+         }
+       }
+     }
+   }
+ }

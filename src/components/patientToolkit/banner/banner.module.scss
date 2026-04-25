@@ -1,0 +1,1121 @@
+.bannerMain {
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-image: url('../../../assets/images/png/semp17.png');
+  background-size: cover;
+  position: relative;
+  top: 0;
+  width: 100%;
+  padding-top: 100px;
+  min-height: 850px;
+  height: 850px;
+      background-position: center bottom;
+  padding-bottom: 0px;
+  margin-top: 112px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    border-radius: 0 300px 0 0;
+    background: linear-gradient(180deg, #59ADED 0%, rgba(89, 173, 237, 0) 100%);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    width: 48%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    z-index: 9;
+    border-radius: 120px 0 0 0;
+    background: linear-gradient(99deg, rgba(20, 81, 54, 0.75) 0%, rgba(40, 94, 36, 0.75) 100%);
+    backdrop-filter: blur(20px);
+
+    @media (min-width: 1800px) and (max-width: 2000px) {
+      width: 900px;
+    }
+
+    @media (min-width: 1600px) and (max-width: 1800px) {
+      width: 800px;
+    }
+
+    @media (min-width : 993px) and (max-width : 1200px) {
+      width: 50%;
+      height: 100%;
+      border-radius: 0 200px 0 0;
+      bottom: 0px;
+      left: 0%;
+      top: auto;
+    }
+
+    @media (min-width : 768px) and (max-width : 992px) {
+      width: 60%;
+      height: 100%;
+      border-radius: 0 200px 0 0;
+      bottom: 0px;
+      left: 0%;
+      top: auto;
+    }
+
+    @media (min-width : 0px) and (max-width : 767px) {
+      width: 100%;
+      height: 330px;
+      border-radius: 0 150px 0 0;
+      bottom: 0px;
+      left: 0%;
+      top: auto;
+      // margin-top: 80px;
+
+    }
+
+  }
+
+  // @media (min-width: 1601px) and (max-width: 1900px){}
+  // @media (min-width: 1601px) and (max-width: 1900px){}
+  @media (min-width: 1601px) and (max-width: 1900px) {
+    min-height: 720px;
+    height: 720px;
+    padding-top: 70px;
+  }
+
+  @media (min-width: 1501px) and (max-width: 1600px) {
+    min-height: 700px;
+    height: 700px;
+    padding-top: 70px;
+  }
+
+  @media (min-width: 1401px) and (max-width: 1500px) {
+    min-height: 680px;
+    height: 680px;
+    padding-top: 70px;
+
+    background-position: right bottom;
+  }
+
+  @media (min-width: 1301px) and (max-width: 1400px) {
+    min-height: 650px;
+    height: 650px;
+    padding-top: 50px;
+
+    background-position: right bottom;
+  }
+
+  @media (min-width: 1201px) and (max-width: 1300px) {
+    height: 580px;
+    background-position: right bottom;
+    min-height: 580px;
+    padding-top: 50px;
+  }
+
+  @media (min-width: 1001px) and (max-width: 1200px) {
+    height: 560px;
+    background-position: right bottom;
+    min-height: 560px;
+    padding-top: 50px;
+  }
+
+  // margin-top: 104px;
+  @media (min-width : 992px) and (max-width : 1000px) {
+    background-position: right bottom;
+    padding-top: 0px;
+    height: 550px;
+    min-height: 550px;
+    position: relative;
+  }
+
+  @media (min-width : 768px) and (max-width : 991px) {
+    min-height: 410px;
+    padding-top: 0px;
+    height: 410px;
+    position: relative;
+    background-image: none;
+  }
+
+  @media (min-width : 0px) and (max-width : 767px) {
+    min-height: 650px;
+    padding-top: 0px;
+    height: 650px;
+    position: relative;
+    background-image: none;
+  }
+
+  .bannerRightImage {
+    position: absolute;
+    border: 0;
+    right: 0;
+    top: 0;
+    object-fit: contain;
+    object-position: right bottom;
+    height: 100%;
+    width: 90%;
+
+    @media (min-width : 1101px) and (max-width : 1400px) {
+      width: 80%;
+
+    }
+
+    @media (min-width : 992px) and (max-width : 1100px) {
+      width: 80%;
+
+    }
+
+    @media (min-width : 768px) and (max-width : 991px) {
+      width: 70%;
+
+    }
+
+    @media (min-width : 0px) and (max-width :767px) {
+      display: none;
+    }
+
+  }
+
+  .zindexBox {
+    z-index: 999;
+  }
+
+  .wraper_img_mobl {
+    @media (min-width : 768px) and (max-width :1900px) {
+      display: none;
+
+    }
+
+    @media (min-width : 0px) and (max-width : 767px) {
+      width: 100%;
+      position: absolute;
+      height: 650px;
+      overflow: hidden;
+      top: 0px;
+      left: 0;
+
+    }
+
+    img {
+      @media (min-width : 0px) and (max-width : 992px) {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: top;
+
+
+      }
+
+    }
+  }
+
+  .bgShadow {
+    @media (min-width:768px) and (max-width: 1100px) {
+      margin-top: auto !important;
+      margin-bottom: 0px !important;
+      margin-bottom: auto !important;
+    }
+
+    @media (min-width: 0) and (max-width: 767px) {
+      margin-top: 0 !important;
+      margin-bottom: 0 !important;
+      display: flex;
+      align-items: center;
+    }
+
+
+
+    .zIndex {
+      background-color: teal !important;
+
+      h1 {
+        width: 100%;
+        color: #FFF;
+        font-family: 'inter-regular' !important;
+        font-size: 55px !important;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+
+        @media (min-width: 1601px) and (max-width: 1900px) {
+          font-size: 59px;
+          margin-bottom: 30px !important;
+          padding-right: 40px;
+
+        }
+
+        @media (min-width: 1501px) and (max-width : 1600px) {
+          font-size: 55px;
+          margin-bottom: 15px !important;
+          padding-right: 60px;
+
+        }
+
+        @media (min-width: 1301px) and (max-width : 1500px) {
+          font-size: 46px;
+          margin-bottom: 15px !important;
+          padding-right: 70px;
+
+        }
+
+        @media (min-width: 1201px) and (max-width : 1300px) {
+          font-size: 43px;
+          margin-bottom: 10px !important;
+          padding-right: 50px;
+
+        }
+
+        @media (min-width: 1025px) and (max-width : 1200px) {
+          font-size: 40px;
+          padding-right: 50px;
+          margin-bottom: 10px !important;
+
+        }
+
+        @media (min-width:992px) and (max-width : 1024px) {
+          font-size: 41px;
+          margin-bottom: 10px !important;
+
+        }
+
+        @media (min-width : 768px) and (max-width : 991px) {
+          font-size: 35px;
+          margin-bottom: 10px !important;
+
+        }
+
+        // @media (min-width: 1201px) and (max-width : 1400px) {
+        //   font-size: 70px;
+        //   margin-bottom: 10px !important;
+
+        // }
+
+        @media (min-width : 0px) and (max-width : 767px) {
+          font-size: 24px;
+          margin-top: 8px !important;
+          width: 100%;
+          padding-left: 20px;
+          margin-bottom: 0px !important;
+          padding: 0px 25px;
+        }
+
+        @media (min-width : 0px) and (max-width : 380px) {
+          padding: 0px 15px;
+
+
+        }
+      }
+
+      .descShadow {
+        border-radius: 40px;
+        background: linear-gradient(170deg, rgba(255, 255, 255, 0.00) 7.65%, rgba(255, 255, 255, 0.35) 92.2%), rgba(255, 255, 255, 0.30);
+        backdrop-filter: blur(15px);
+        padding: 30px 30px;
+        padding-bottom: 10px;
+        margin-top: 30px !important;
+
+        @media (min-width : 768px) and (max-width : 1023px) {
+          margin-left: 0;
+          margin-top: 20px;
+          border-radius: 19.478px;
+          background: linear-gradient(170deg, rgba(255, 255, 255, 0.00) 7.65%, rgba(255, 255, 255, 0.35) 92.2%), rgba(255, 255, 255, 0.30);
+          backdrop-filter: blur(7.304347515106201px);
+          width: 85%;
+          height: 175px;
+          padding: 12px;
+
+        }
+
+        @media (min-width : 0px) and (max-width : 767px) {
+          margin: auto;
+          margin-top: 20px;
+          border-radius: 19.478px;
+          background: linear-gradient(170deg, rgba(255, 255, 255, 0.00) 7.65%, rgba(255, 255, 255, 0.35) 92.2%), rgba(255, 255, 255, 0.30);
+          backdrop-filter: blur(7.304347515106201px);
+          width: 85%;
+          height: 145px;
+          padding: 12px;
+        }
+
+        @media (min-width : 0px) and (max-width : 380px) {
+          width: 95%;
+
+        }
+
+        .callUs {
+          margin: 20px 0px;
+
+          @media (min-width : 0px) and (max-width : 380px) {
+            margin: 10px 0px;
+
+
+          }
+
+          h4 {
+            color: #000;
+            font-family: "inter-regular" !important;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+
+            @media (min-width : 0px) and (max-width : 1023px) {
+              font-size: 12px;
+            }
+          }
+        }
+
+        p {
+          color: #000;
+          font-family: 'inter-regular';
+          font-size: 24px;
+          font-style: normal;
+          font-weight: 300;
+          line-height: 32px;
+          /* 133.333% */
+
+          /* 133.333% */
+          @media (min-width: 768px) and (max-width : 1200px) {
+            line-height: 22px;
+            margin-bottom: 10px !important;
+            font-size: 14px;
+
+          }
+
+          @media (min-width: 0px) and (max-width : 767px) {
+            font-size: 12px;
+            line-height: 15px;
+            margin-bottom: 10px !important;
+          }
+        }
+      }
+    }
+  }
+
+  h1 {
+    color: #222;
+    font-family: "inter-regular" !important;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 55px;
+    margin-bottom: 40px !important;
+    padding-right: 20px;
+  }
+
+  p {
+    color: #222;
+    font-family: "inter-regular" !important;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    margin-bottom: 50px !important;
+  }
+
+  button {
+    border-radius: 150px;
+    background: #006CB0;
+    display: flex;
+    height: 60px;
+    padding: 14px 27px;
+    align-items: center;
+    gap: 10px;
+    color: #fff;
+    text-align: center;
+    font-family: 'inter-regular-medium';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    border: none;
+    padding: 0px 5px;
+    transition: .5s ease;
+
+
+    @media (max-width : 1023px) {
+      width: unset !important;
+    }
+
+    img {
+      position: relative;
+      left: 2px;
+      height: 30px;
+      width: 30px;
+
+      @media (max-width : 768px) {
+        height: 20px;
+        width: 20px;
+      }
+    }
+
+    &:first-child {
+      background: linear-gradient(270deg, rgba(184, 229, 255, 0.65) 0%, rgba(5, 43, 58, 0.65) 100%), #2FB3E8;
+      background-blend-mode: soft-light, normal;
+    }
+
+    @media (min-width: 769px) and (max-width : 1023px) {
+      font-size: 16px;
+      width: 60%;
+      white-space: nowrap;
+      padding: 0px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 40px;
+      font-size: 14px;
+    }
+
+    @media (min-width: 0px) and (max-width : 768px) {
+      font-size: 16px;
+      width: 50%;
+      white-space: nowrap;
+      padding: 0px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 35px;
+      font-size: 12px;
+    }
+
+    &:first-child {
+      background: #006CB0;
+      margin-right: 10px;
+      transition: 0.5s;
+
+      span {
+        svg {
+          height: 30px;
+
+          @media (max-width : 768px) {
+            height: 20px;
+          }
+        }
+      }
+
+      &:hover {
+        background: #000 !important;
+        transition: .5s ease;
+      }
+    }
+
+    &:last-child {
+      transition: 0.5s;
+
+
+    }
+  }
+
+
+}
+
+
+:global(.urdu) .bannerMain {
+  p {
+    font-family: 'Jameel Noori Nastaleeq' !important;
+  }
+
+  .zIndex {
+    h1 {
+      font-family: 'Jameel Noori Nastaleeq';
+      line-height: 80px;
+      text-align: right;
+      font-weight: 400;
+      direction: rtl;
+    }
+
+    p {
+      text-align: right;
+      direction: rtl;
+    }
+  }
+
+  button {
+    width: 64%;
+    font-family: 'Jameel Noori Nastaleeq';
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+
+    @media (min-width: 993px) and (max-width : 1300px) {
+      width: 280px;
+
+
+    }
+
+    @media (min-width: 768px) and (max-width : 992px) {
+      width: 220px;
+
+
+    }
+
+    @media (min-width: 0px) and (max-width: 767px) {
+      width: 191px;
+
+
+
+    }
+
+    &:nth-child(1) {
+      order: 2;
+      display: flex;
+
+
+    }
+
+    span {
+      margin-top: -5px;
+      margin-right: -8px;
+
+      @media (min-width: 0px) and (max-width: 767px) {
+        margin-top: -4px;
+
+      }
+    }
+
+    img {
+      position: absolute;
+      left: 17px;
+      transform: rotate(180deg);
+
+      @media (min-width: 0px) and (max-width: 767px) {
+        left: 20px;
+
+
+      }
+    }
+  }
+
+  button {
+    white-space: nowrap;
+  }
+
+  .bttttn {
+    gap: 12px;
+    white-space: nowrap;
+  }
+
+
+}
+
+.bttttn {
+  button {
+    padding: 0 2rem;
+    white-space: nowrap;
+  }
+}
+
+
+:global(.urdu) .bannerMain {
+  min-height: 105vh;
+
+  @media (min-width : 0px) and (max-width : 768px) {
+    min-height: 69vh;
+  }
+
+  h1 {
+    @media (min-width : 0px) and (max-width : 768px) {
+      line-height: 35px !important;
+    }
+
+  }
+
+  button {
+    &:first-child {
+      @media (min-width : 0px) and (max-width : 768px) {
+        margin-right: 0px !important;
+      }
+    }
+  }
+
+
+  .descShadow {
+    @media (min-width : 0px) and (max-width : 768px) {
+      padding: 30px 12px;
+
+    }
+  }
+}
+
+
+
+
+.wrapeActionBtn {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 18px;
+  padding-top: 18px;
+  padding-right: 22px;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(20px);
+  transition: all 0.4s ease-in-out;
+  z-index: 1000;
+
+  @media (min-width: 0px) and (max-width: 768px) {
+    right: auto;
+    width: 100%;
+    padding-top: 0px;
+    bottom: 10px;
+    top: auto !important;
+    left: 25px;
+    justify-content: start;
+    gap: 10px;
+  }
+
+  img {
+    width: 69px;
+    height: 69px;
+    cursor: pointer;
+
+    @media (min-width: 0px) and (max-width: 768px) {
+      width: 50px;
+      height: 50px;
+    }
+  }
+
+  &.showBtn {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    height: fit-content;
+    top: 15%;
+
+    @media (min-width: 992px) and (max-width : 1100px) {
+      top: 23%;
+
+    }
+
+    // @media (min-width: 768px) and (max-width : 991px) {
+    //   top: 13%;
+
+    // }
+  }
+
+  .imageContainer {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    padding-bottom: 6px;
+    /* reserve space for label so siblings won't move */
+
+    img {
+      outline: none;
+      display: block;
+      user-select: none;
+      -webkit-user-drag: none;
+    }
+
+    /* keep the label in flow (no max-height/overflow) but hidden visually */
+    span {
+      display: block;
+      opacity: 0;
+      transform: translateY(6px);
+      transition: opacity 0.22s ease, transform 0.22s ease;
+      color: #000;
+      text-align: center;
+      font-family: "Roboto", sans-serif;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: normal;
+      pointer-events: none;
+      /* prevents accidental hover on the label */
+
+      @media (min-width: 0px) and (max-width: 768px) {
+        opacity: 1;
+        position: relative;
+        top: -10px;
+      }
+    }
+
+    /* reveal on hover / keyboard focus - no layout shift */
+    &:hover span,
+    &:focus-within span {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
+
+
+.wraper_arrow_top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 18px;
+  padding-top: 18px;
+  padding-right: 22px;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(20px);
+  transition: all 0.4s ease-in-out;
+  z-index: 1000;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #222;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px !important;
+  width: 60px !important;
+  height: 60px !important;
+  cursor: pointer;
+
+  @media (min-width: 0px) and (max-width: 768px) {
+    width: 50px;
+    height: 50px;
+    background-color: #b3b3b3;
+  }
+
+  &.showBtnArrow {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    height: fit-content;
+    bottom: 4%;
+  }
+
+  .arrowUpSvg {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cg clip-path='url(%23clip0_3377_222)'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M13.6684 20.4315L13.6684 8.2315L19.5337 13.8315L21 12.4315L12.621 4.4315L4.24202 12.4315L5.70834 13.8315L11.5736 8.2315L11.5736 20.4315L13.6684 20.4315Z' fill='white'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_3377_222'%3E%3Crect width='24' height='24' fill='white' transform='translate(24 1.04907e-06) rotate(90)'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: block;
+    width: 24px;
+    height: 24px;
+
+  }
+}
+
+.boxTExttt {
+  position: absolute;
+  right: 3%;
+  width: fit-content;
+  height: fit-content;
+  z-index: 9;
+  width: 40%;
+  margin: auto;
+  top: 30%;
+
+  @media (min-width : 768px) and (max-width : 992px) {
+    width: 100%;
+    font-size: 28px;
+    bottom: 0;
+    top: unset;
+    padding-left: 18px;
+  }
+
+  @media (min-width : 0px) and (max-width : 767px) {
+    width: 100%;
+    font-size: 28px;
+    bottom: 0;
+    top: unset;
+    padding-left: 18px;
+
+    text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+  }
+
+
+  h1 {
+    color: #FFF;
+    font-family: 'inter-regular';
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    @media (min-width : 768px) and (max-width : 992px) {
+      font-size: 28px;
+      margin-bottom: 20px !important;
+    }
+
+    @media (min-width : 0px) and (max-width : 767px) {
+      font-size: 28px;
+      margin-bottom: 20px !important;
+
+    }
+  }
+
+  p {
+    color: #FFF;
+    font-family: 'inter-regular';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+
+    @media (min-width : 768px) and (max-width : 992px) {
+      font-size: 18px;
+      width: 82%;
+    }
+
+    @media (min-width : 0px) and (max-width : 767px) {
+      font-size: 18px;
+      width: 82%;
+    }
+  }
+}
+
+
+.patientDownload {
+  border-radius: 10px !important; 
+    background: linear-gradient(0deg, #77AA42 0%, #77AA42 100%), #77AA42 !important;
+    display: flex; 
+      height: 60px !important;
+      padding: 13px 40px !important;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      flex-shrink: 0;
+      color: #FFF;
+        font-family: 'inter-medium' !important;
+        font-size: 24px !important;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        cursor: pointer;
+      transition: background-color 0.5s ease, color 0.5s ease;
+
+      &:hover {
+      background: #fff !important;
+      color: #78A941;
+      } 
+}
+
+.downloadIcon {
+  // background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32' fill='none'%3E%3Cpath d='M16.5 22.0616L9.6692 15.2308L11.3556 13.4956L15.3 17.44V4H17.7V17.44L21.6444 13.4956L23.3308 15.2308L16.5 22.0616ZM7.3924 28C6.58413 28 5.9 27.72 5.34 27.16C4.78 26.6 4.5 25.9159 4.5 25.1076V20.7692H6.9V25.1076C6.9 25.2308 6.95133 25.3436 7.054 25.446C7.1564 25.5487 7.2692 25.6 7.3924 25.6H25.6076C25.7308 25.6 25.8436 25.5487 25.946 25.446C26.0487 25.3436 26.1 25.2308 26.1 25.1076V20.7692H28.5V25.1076C28.5 25.9159 28.22 26.6 27.66 27.16C27.1 27.72 26.4159 28 25.6076 28H7.3924Z' fill='white'/%3E%3C/svg%3E");
+  // background-repeat: no-repeat;
+  // background-size: cover;
+  // background-position: center;
+  // display: block;
+  width: 32px;
+    height: 32px;
+}
+
+
+
+/* =============================================
+   CONSOLIDATED RESPONSIVE QUERIES (Banner Section)
+   ============================================= */
+
+// 1. EXTRA LARGE SCREENS & DESKTOPS (1024px to 1440px+)
+@media screen and (min-width: 1025px) {
+  .bannerMain {
+    height: 700px; // Standard height for laptop
+    min-height: 700px;
+
+    &::before {
+      width: 45%; // Side overlay balanced
+      border-radius: 120px 0 0 0;
+      right: 0% !important;
+      left: unset !important;
+    }
+
+
+    .boxTExttt {
+      top: 25%;
+      right: 5%;
+      width: 35%;
+
+      h1 {
+        font-size: 50px;
+      }
+
+      p {
+        font-size: 22px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+  .bannerMain {
+    height: 500px;
+    min-height: 500px;
+  }
+
+}
+
+// 2. TABLET / iPAD PRO (769px to 1024px)
+@media screen and (max-width: 1024px) {
+  .bannerMain {
+    min-height: 550px;
+    height: auto;
+    margin-top: 80px;
+    padding-top: 40px;
+    background-position: right center;
+
+    &::before {
+      width: 55%;
+      border-radius: 0 120px 0 0;
+      left: 0; // Overlay position shift
+      top: 0;
+    }
+
+    .zIndex h1 {
+      font-size: 36px !important;
+      padding-right: 20px;
+    }
+
+    .boxTExttt {
+      width: 50%;
+      top: 20%;
+      left: 5%;
+
+      h1 {
+        font-size: 32px;
+      }
+
+      p {
+        font-size: 18px;
+      }
+    }
+
+    .bannerRightImage {
+      width: 70%;
+    }
+  }
+}
+
+// 3. MOBILE VIEW (Up to 768px)
+@media screen and (max-width: 768px) {
+  .bannerMain {
+    min-height: 650px;
+    height: auto;
+    margin-top: 60px;
+    padding-top: 20px;
+
+    &::before {
+      width: 100%;
+      height: 380px;
+      bottom: 0;
+      top: auto;
+      border-radius: 40px 0px 0 0;
+    }
+
+    .wraper_img_mobl {
+      display: block;
+      height: 450px;
+      background-image: url('../../../assets/images/png/wraper_img_banner.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      position: relative;
+
+
+      img {
+            position: absolute;
+              left: 0;
+              right: 0;
+              margin: auto;
+              object-fit: contain;
+              top: 94px;
+              bottom: 0;
+              object-position: top center;
+              width: 100%;
+              height: 100%;
+      }
+    }
+
+    .boxTExttt {
+      width: 100%;
+      bottom: 40px;
+      left: 0;
+      padding: 0 25px;
+      z-index: 99;
+              padding-top: 67px;
+
+      h1 {
+        font-size: 26px;
+        margin-bottom: 10px !important;
+        text-align: center;
+      }
+
+      p {
+        font-size: 16px;
+        width: 100%;
+        text-align: center;
+      }
+    }
+
+    .zIndex h1 {
+      font-size: 24px !important;
+      text-align: center !important;
+      padding: 0 15px;
+    }
+
+    .descShadow {
+      width: 92%;
+      margin: 20px auto !important;
+      padding: 15px;
+      backdrop-filter: blur(10px);
+    }
+
+    .patientDownload {
+      font-size: 18px !important;
+      height: 50px !important;
+      width: 100%;
+      padding: 10px !important;
+    }
+
+    // Action buttons (WhatsApp/Call) mobile position
+    .wrapeActionBtn {
+      bottom: 15px;
+      left: 15px;
+      gap: 12px;
+
+      img {
+        width: 45px;
+        height: 45px;
+      }
+
+      span {
+        font-size: 12px;
+      }
+    }
+
+    .wraper_arrow_top {
+      width: 45px !important;
+      height: 45px !important;
+      right: 15px;
+      bottom: 15px;
+    }
+  }
+}
+
+// 4. SMALL MOBILE (Under 380px)
+@media screen and (max-width: 380px) {
+  .bannerMain {
+    .zIndex h1 {
+      font-size: 20px !important;
+    }
+
+    .boxTExttt h1 {
+      font-size: 22px;
+    }
+
+    .descShadow p {
+      font-size: 13px;
+      line-height: 18px;
+    }
+  }
+}
+
+
+
+
+
+
+
+

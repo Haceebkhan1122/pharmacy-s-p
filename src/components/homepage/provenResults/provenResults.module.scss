@@ -1,0 +1,230 @@
+.mainWrapper {
+    width: 100%;
+    min-height: 960px;
+    background-color: #e6f5e6;
+    padding-top: 69px;
+
+    @media(min-width:1024px) and (max-width: 1250px) {
+        min-height: 810px;
+    }
+
+    @media(min-width:769px) and (max-width: 1023px) {
+        min-height: 810px;
+    }
+
+    h1 {
+        color: #222;
+        text-align: center;
+        font-family: 'Inter';
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 60px;
+        margin-bottom: 41px !important;
+    }
+
+    .wraperSingleContent {
+        margin-top: 74px;
+        margin-bottom: 68px;
+
+        img {
+            height: 565px;
+
+            @media(min-width:1024px) and (max-width: 1250px) {
+                width: 100%;
+                height: auto;
+            }
+
+            @media(min-width:769px) and (max-width: 1023px) {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        .right_info {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            align-items: start;
+            justify-content: center;
+            height: 100%;
+            width: 71%;
+            margin: auto;
+
+            h2 {
+                color: #000;
+                font-family: "Inter";
+                font-size: 40px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 55px;
+                text-align: start;
+                position: relative;
+
+                @media(min-width:1024px) and (max-width: 1250px) {
+                    font-size: 22px;
+                    line-height: 27px;
+                }
+
+
+                @media(min-width:769px) and (max-width: 1023px) {
+                    font-size: 22px;
+                    line-height: 27px;
+                }
+
+
+                .citationNum {
+                    font-size: 20px;
+                    position: absolute;
+                    bottom: 5%;
+                    color: #000;
+                    font-family: "Inter";
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 55px;
+                    text-align: start;
+                }
+
+            }
+
+
+
+            ul {
+                padding-left: 25px;
+
+                @media(min-width:1200px) and (max-width: 1380px) {
+                padding-left: 25px;
+                    }
+
+                li {
+                    color: #000;
+                    font-family: 'Inter';
+                    font-size: 24px;
+                    font-style: normal;
+                    font-weight: 300;
+                    line-height: normal;
+                    margin-bottom: 25px;
+
+                    @media(min-width:1024px) and (max-width: 1250px) {
+                        color: #000;
+                        font-family: "Inter";
+                        font-size: 18px;
+                        font-style: normal;
+                        font-weight: 300;
+                        line-height: normal;
+                        margin-bottom: 12px;
+                    }
+
+                    @media(min-width:769px) and (max-width: 1023px) {
+                        color: #000;
+                        font-family: "Inter";
+                        font-size: 18px;
+                        font-style: normal;
+                        font-weight: 300;
+                        line-height: normal;
+                        margin-bottom: 12px;
+                    }
+                }
+            }
+
+            p {
+                color: #000;
+                font-family: 'Inter';
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: 35px;
+
+                @media(min-width:1024px) and (max-width: 1250px) {
+                    color: #000;
+                    font-family: "Inter";
+                    font-size: 17px;
+                    font-style: normal;
+                    font-weight: 300;
+                    line-height: 28px;
+                    margin-bottom: 12px;
+                }
+
+                @media(min-width:769px) and (max-width: 1023px) {
+                    color: #000;
+                    font-family: "Inter";
+                    font-size: 17px;
+                    font-style: normal;
+                    font-weight: 300;
+                    line-height: 28px;
+                    margin-bottom: 12px;
+                }
+
+                @media(min-width:0px) and (max-width: 768px) {
+                    text-align: start;
+                    font-size: 13px !important;
+                    line-height: 23px !important;
+                }
+            }
+        }
+    }
+}
+
+
+
+@media (max-width: 768px) {
+    .mainWrapper {
+        padding-top: 40px !important;
+        min-height: auto !important;
+
+        h1 {
+            font-size: 32px !important;
+            line-height: 40px !important;
+            margin-bottom: 30px !important;
+        }
+
+        .wraperSingleContent {
+            margin-top: 40px !important;
+            margin-bottom: 35px !important;
+
+            img {
+                width: 100% !important;
+                height: auto !important;
+            }
+
+            .right_info {
+                width: 95% !important;
+                gap: 20px !important;
+                align-items: center !important;
+                text-align: center !important;
+
+                h2 {
+                    font-size: 24px !important;
+                    line-height: 28px !important;
+                    text-align: center !important;
+                    margin-top: 20px !important;
+                }
+
+                p {
+                    font-size: 18px !important;
+                    line-height: 28px !important;
+                }
+
+                ul {
+                    width: 100%;
+                    text-align: start;
+
+                    li {
+                        margin-bottom: 5px;
+                        font-size: 18px !important;
+                        line-height: 26px !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.wraperSingleContent .right_info p {
+    @media(min-width:0px) and (max-width: 768px) {
+        text-align: start;
+        font-size: 13px !important;
+        line-height: 23px !important;
+    }
+}

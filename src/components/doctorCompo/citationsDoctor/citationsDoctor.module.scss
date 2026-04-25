@@ -1,0 +1,121 @@
+.needToGet {
+    width: 100%;
+    padding: 60px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #E0E7EE;
+    margin-top: 90px;
+
+    @media (min-width: 768px) and (max-width : 1100px) {
+        margin-top: 30px;
+
+    }
+
+    @media (min-width: 0px) and (max-width : 768px) {
+        min-height: 35vh;
+        margin-top: 50px;
+    }
+
+    .boxx {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        // align-items: center;
+
+        @media (min-width: 0px) and (max-width : 768px) {
+            width: 100%;
+            margin-top: 22px;
+        }
+
+        h2 {
+            color: #222;
+            text-align: left;
+            font-family: "Figtree-regular" !important;
+            font-size: 42px !important;
+            font-style: normal;
+            font-weight: 400 !important;
+            line-height: 65px;
+
+            @media (min-width : 0px) and (max-width : 768px) {
+                font-size: 24px !important;
+                line-height: 24px !important;
+
+            }
+        }
+
+        p {
+            margin: auto;
+            color: #222;
+            text-align: left;
+            font-family: "Figtree-regular";
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: 1.3;
+            /* 141.667% */
+
+            @media (min-width : 0px) and (max-width : 768px) {
+                font-size: 16px;
+
+            }
+        }
+
+        button {
+            height: 60px;
+            border-radius: 150px;
+            background: linear-gradient(270deg, rgba(184, 229, 255, 0.65) 0%, rgba(5, 43, 58, 0.65) 100%), #2FB3E8;
+            background-blend-mode: soft-light, normal;
+            text-align: center;
+            font-family: "Figtree-regular";
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 20px;
+            border: none;
+            transition: 0.5s;
+            color: #fff;
+            color: #FFF;
+            text-align: center;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+
+            &:hover {
+                background: linear-gradient(180deg, rgba(184, 229, 255, 0.85) 21.63%, rgba(5, 43, 58, 0.85) 100%), linear-gradient(0deg, #0E486B 0%, #0E486B 100%), linear-gradient(270deg, rgba(184, 229, 255, 0.65) 0%, rgba(5, 43, 58, 0.65) 100%), #2FB3E8;
+
+            }
+        }
+    }
+}
+
+:global(.urdu) .needToGet {
+
+
+    h2 {
+        // font-family: 'Jameel Noori Nastaleeq';
+
+    }
+
+    p {
+        // font-family: 'Jameel Noori Nastaleeq';
+    }
+
+    button {
+        // font-family: 'Jameel Noori Nastaleeq';
+    }
+
+    .button {
+        direction: rtl !important;
+
+        svg {
+            transform: rotate(179deg) !important;
+        }
+    }
+}

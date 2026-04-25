@@ -1,0 +1,183 @@
+.ctaBox {
+    margin-top: 100px;
+    .boxCta {
+        padding:  0px 60px;
+        background-image: url('../../../assets/images/png/semp6.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        border-radius: 40px;
+
+        h2 {
+        color: #FFF;
+            font-family: 'inter-regular';
+            font-size: 30px !important;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 40px !important;
+            text-align: start;
+            margin-bottom: 12px !important;
+            width: 65%;
+
+        }
+
+        p {
+            color: #FFF;
+                font-family: 'inter-regular';
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: normal;
+        }
+
+        button {
+            margin-top: 18px !important;
+        color: #222;
+            text-align: center;
+            font-family: 'inter-regular';
+            font-size: 26.84px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;border-radius: 10px;
+                background: #FFF;
+                display: flex;
+                    width: 351px;
+                    height: 67px;
+                    padding: 15.656px 30.195px;
+                    align-items: center;
+                    gap: 11.183px;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.5s ease, color 0.5s ease;
+
+            &:hover {
+            background-color: #78A941;
+            color: #fff;
+            }
+        }
+    }
+}
+/* --- Desktop Styles (Original) --- */
+.ctaBox {
+    margin-top: 100px;
+
+    .boxCta {
+        height: 380px;
+        overflow: hidden;
+        padding: 0px 60px;
+        background-image: url('../../../assets/images/png/semp6.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        border-radius: 40px;
+        overflow: hidden; // Taake image bahar na nikle
+        position: relative;
+
+        .docImg {
+            width: 100%;
+            height: auto;
+            object-fit: contain;
+            display: block;
+        }
+
+        h2 {
+color: #FFF;
+    font-family: 'inter-regular';
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 56px;
+    /* 133.333% */
+            margin-bottom: 12px !important;
+        }
+
+        button {
+        color: #222;
+            text-align: center;
+            font-family: 'inter-regular';
+            font-size: 26.84px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+        }
+    }
+}
+
+/* ==========================================
+   ALAG SE MEDIA QUERIES
+   ========================================== */
+
+@media (max-width: 992px) {
+    .ctaBox {
+        margin-top: 60px;
+
+        .boxCta {
+            padding: 40px;
+
+            h2 {
+                font-size: 26px !important;
+                line-height: 40px;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .ctaBox {
+        margin-top: 40px;
+        padding-bottom: 50px !important; // pb-100 ko mobile par kam kiya
+
+        .boxCta {
+            padding: 40px 20px 0px 20px; // Bottom padding 0 taake doctor image niche se touch kare
+            text-align: center;
+            height: auto;
+
+            h2 {
+                font-size: 22px !important;
+                line-height: 30px;
+                text-align: center;
+            }
+
+            p {
+                font-size: 16px;
+            }
+
+            button {
+                width: 100%;
+                max-width: 280px;
+                font-size: 18px;
+                height: 50px;
+                margin: 20px auto !important;
+                justify-content: center;
+            }
+
+            .docImg {
+                max-width: 250px; // Mobile par doctor ko chota kiya
+                margin: 20px auto 0;
+            }
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .ctaBox .boxCta {
+        h2 {
+            font-size: 20px !important;
+        }
+
+        .docImg {
+            max-width: 200px;
+        }
+
+        // Mazeed chota for small phones
+    }
+}
+
+
+.wrapeInfoo {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}

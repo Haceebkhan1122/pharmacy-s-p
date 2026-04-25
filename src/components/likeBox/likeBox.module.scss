@@ -1,0 +1,40 @@
+.boxLike {
+    background: rgba(151, 169, 189, 0.50);
+
+    padding: 14px 19px;
+    color: #1C352D;
+    font-family: "Figtree-Medium";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+
+    border-radius: 8px;
+
+    @media(min-width:768px) and (max-width:1100px) {
+
+        margin-bottom: 30px;
+    }
+
+    @media (min-width: 0) and (max-width: 767px) {
+        padding: 7px 15px;
+        font-size: 14px;
+        border-radius: 6px;
+        margin-bottom: 30px;
+
+    }
+
+
+}
+
+.boxLike1 {
+    img {
+        cursor: pointer;
+        @media (min-width: 0) and (max-width: 767px) {
+            width: 30px;
+            height: 30px;
+
+
+        }
+    }
+}

@@ -1,0 +1,20 @@
+<svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="50" cy="50" r="50" fill="#70CB0D"/>
+<circle cx="50" cy="50" r="50" fill="#2FB3E8"/>
+<circle cx="50" cy="50" r="50" fill="url(#paint0_linear_3377_229)" fill-opacity="0.65" style="mix-blend-mode:soft-light"/>
+<g clip-path="url(#clip0_3377_229)">
+<path d="M42.5 67.5C43.8807 67.5 45 66.3807 45 65C45 63.6193 43.8807 62.5 42.5 62.5C41.1193 62.5 40 63.6193 40 65C40 66.3807 41.1193 67.5 42.5 67.5Z" fill="white"/>
+<path d="M60 67.5C61.3807 67.5 62.5 66.3807 62.5 65C62.5 63.6193 61.3807 62.5 60 62.5C58.6193 62.5 57.5 63.6193 57.5 65C57.5 66.3807 58.6193 67.5 60 67.5Z" fill="white"/>
+<path d="M36.2258 33.5049C36.1691 33.2215 36.016 32.9665 35.7925 32.7833C35.569 32.6001 35.289 32.5 35 32.5H30V35H33.975L38.7743 58.9951C38.8309 59.2785 38.984 59.5335 39.2075 59.7167C39.431 59.8999 39.711 60 40 60H62.5V57.5H41.025L40.025 52.5H62.5C62.7844 52.5 63.0603 52.403 63.2822 52.2251C63.504 52.0471 63.6585 51.7989 63.7203 51.5212L66.5556 38.75H63.9964L61.4978 50H39.525L36.2258 33.5049Z" fill="white"/>
+<path d="M52.5 37.5V32.5H50V37.5H45V40H50V45H52.5V40H57.5V37.5H52.5Z" fill="white"/>
+</g>
+<defs>
+<linearGradient id="paint0_linear_3377_229" x1="100" y1="50" x2="0" y2="50" gradientUnits="userSpaceOnUse">
+<stop stop-color="#B8E5FF"/>
+<stop offset="1" stop-color="#052B3A"/>
+</linearGradient>
+<clipPath id="clip0_3377_229">
+<rect width="40" height="40" fill="white" transform="translate(30 30)"/>
+</clipPath>
+</defs>
+</svg>

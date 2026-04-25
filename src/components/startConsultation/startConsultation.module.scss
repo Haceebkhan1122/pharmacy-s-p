@@ -1,0 +1,290 @@
+
+.ctaBox {
+  padding-bottom: 100px;
+
+  .boxCta {
+    // background: url(../../assets/images/png/ctaBanner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  background: linear-gradient(94.75deg, #005B56 4.91%, #003835 76.38%),
+linear-gradient(129.16deg, rgba(255, 255, 255, 0) -0.38%, rgba(2, 171, 159, 0.75) 93.79%);
+;
+    border-radius: 40px 40px 40px 0;
+    height: 380px;
+    position: relative;
+
+    /* background image wrapper (next/image fill) */
+    .bgSvg {
+      position: absolute;
+      inset: 0;
+      z-index: 1;
+      pointer-events: none;
+      opacity: 0.12;
+      /* match the subtle decorative look */
+    }
+
+    .content {
+      /* room for overlapping doctor */
+    }
+
+    .textCol {
+      flex: 1;
+      // padding-top: 70px;
+
+      .first_step {
+        color: #fff;
+        font-family: "Inter", sans-serif;
+        font-size: 42px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 56px;
+        /* 133.333% */
+        margin-bottom: 16px !important;
+
+        // text-wrap-mode: nowrap;
+        @media (min-width: 1301px) and (max-width: 1500px) {
+          font-size: 39px;
+
+
+        }
+
+        @media(min-width:768px) and (max-width:1200px) {
+
+          font-size: 40px !important;
+
+
+
+
+
+        }
+      }
+
+      .subHeading {
+        color: #fff;
+        font-family: "Inter", sans-serif;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin-bottom: 50px !important;
+        width: 90%;
+
+        @media (min-width: 1301px) and (max-width: 1500px) {
+          font-size: 22px;
+
+
+        }
+
+        @media(min-width:768px) and (max-width:1200px) {
+
+          font-size: 20px !important;
+
+
+
+
+
+        }
+      }
+
+      button {
+        display: flex;
+        width: 333px;
+        height: 60px;
+        padding: 16px 18px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        border-radius: 10px;
+        background: #fff;
+        color: #000;
+        font-family: "Barlow", sans-serif;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 40px;
+        border: 0;
+        transition: .5s ease;
+
+        /* 181.818% */
+        &:hover {
+          background-color: #00AEEF !important;
+          color: #fff !important;
+          transition: .5s ease;
+        }
+      }
+    }
+
+    /* doctor wrapper: absolute overlap on the right */
+    .doctorWrap {
+      position: absolute;
+      bottom: 0;
+
+      img {
+        width: 426px !important;
+        height: 357px !important;
+        width: auto;
+        display: block;
+      }
+    }
+  }
+}
+
+/* Medium screens */
+@media (max-width: 991px) {
+  .ctaBox {
+    margin-top: 40px;
+
+    .boxCta {
+      padding: 26px 24px 0 24px;
+      min-height: 200px;
+      // border-radius: 20px;
+
+      .ctaContent {
+        margin-top: 20;
+      }
+
+      .doctorWrap {
+        right: 20px;
+
+        img {
+          width: 300px !important;
+          height: auto !important;
+        }
+      }
+
+      .textCol {
+        padding-top: 0px;
+      }
+
+      .textCol h2 {
+        font-size: 30px !important;
+        margin-bottom: 30px !important;
+      }
+
+      .textCol button {
+        top: -10px;
+        position: relative;
+        width: 270px;
+        height: 44px;
+        font-size: 15px;
+
+        span svg {
+          height: 25px !important;
+          width: 25px !important;
+        }
+      }
+    }
+  }
+}
+
+/* Small screens: stack vertically and move doctor below */
+@media (max-width: 575px) {
+  .ctaBox {
+    .boxCta {
+      flex-direction: column;
+      align-items: center;
+      padding: 22px 16px;
+      min-height: auto;
+
+      .content {
+        padding-right: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .textCol h2 {
+        font-size: 20px !important;
+        margin-bottom: 12px !important;
+        line-height: 30px !important;
+        text-align: center;
+        width: 80%;
+      }
+
+      .textCol button {
+        width: auto;
+        justify-content: center;
+        font-size: 15px;
+        // padding: 15.656px 10.195px;
+        text-wrap-mode: nowrap;
+
+        span svg {
+          height: 25px !important;
+          width: 25px !important;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 0) and (max-width: 767px) {
+  .ctaBox {
+    padding-bottom: 40px !important;
+  }
+
+  .boxCta {
+    height: auto !important;
+  }
+
+  .first_step {
+    text-align: center;
+    font-size: 30px !important;
+    line-height: normal !important;
+  }
+
+  .subHeading {
+    text-align: center;
+    margin-bottom: 30px !important;
+    font-size: 22px !important;
+    width: 95% !important;
+  }
+
+  .textCol {
+    padding-top: 0 !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+:global(.urdu) {
+  .ctaBox {
+    // padding-bottom: 100px;
+
+    .boxCta {
+      button {
+        direction: ltr;
+      }
+    }
+  }
+
+  .content {
+    direction: rtl;
+  }
+
+  .first_step {
+    text-align: right !important;
+    color: #fff;
+    font-family: "Dubai" !important;
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 56px;
+    /* 133.333% */
+  }
+
+  .first_consultation_butn {
+    color: #222;
+    text-align: center !important;
+    font-family: "Inter";
+    font-size: 26.84px;
+    font-weight: 500;
+    line-height: normal;
+    justify-content: center;
+  }
+
+  .butn {
+    justify-content: center;
+  }
+}

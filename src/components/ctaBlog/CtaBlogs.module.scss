@@ -1,0 +1,164 @@
+.ctaBox {
+    margin-top: 100px;
+    .boxCta {
+        padding:  0px 60px;
+        // background-image: url('../../../assets/images/png/doc8.png');
+        // background-size: cover;
+        // background-position: center;
+        // background-repeat: no-repeat;
+        border-radius: 40px;
+            background:  linear-gradient(129deg, rgba(255, 255, 255, 0.00) -0.38%, rgba(2, 171, 159, 0.75) 93.79%), linear-gradient(95deg, #005B56 4.91%, #003835 76.38%);
+            position: relative;
+
+        h2 {
+        color: #FFF;
+            font-family: 'Outfit-light';
+            font-size: 30px !important;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 56px;
+            text-align: start;
+            margin-bottom: 12px !important;
+        }
+
+        p {
+            color: #FFF;
+                font-family: 'Outfit-light';
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: normal;
+        }
+
+        button {
+            margin-top: 18px !important;
+        color: #222;
+            text-align: center;
+            font-family: 'Outfit-light';
+            font-size: 26.84px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;border-radius: 10px;
+                background: #FFF;
+                display: flex;
+                    width: 351px;
+                    height: 67px;
+                    padding: 15.656px 30.195px;
+                    align-items: center;
+                    gap: 11.183px;
+            border: none;
+
+              &:hover{
+      background-color: #a5d773;
+    }
+        }
+    }
+}
+
+
+
+
+
+
+.ctaBox {
+
+    // Desktop/Laptop (Default fix for large screens)
+    .boxCta {
+        overflow: hidden; // Taake doctor ki image border se bahar na nikalay
+
+        .docImg {
+            width: 100%;
+            height: auto;
+            object-fit: contain;
+            display: block;
+            margin-top: auto; // Image ko bottom se align karne ke liye
+        }
+    }
+
+    // 1024px to 1300px
+    @media (min-width: 1024px) and (max-width: 1300px) {
+        .boxCta {
+            padding: 0 40px;
+
+            h2 {
+                font-size: 28px !important;
+                line-height: 40px;
+            }
+
+            p {
+                font-size: 20px;
+            }
+
+            button {
+                width: 300px;
+                height: 60px;
+                font-size: 22px;
+            }
+        }
+    }
+
+    // Tablet (768px to 1023px)
+    @media (max-width: 1023px) {
+        .boxCta {
+            padding: 40px; // Charon taraf barabar padding
+
+            h2 {
+                font-size: 24px !important;
+                line-height: 36px;
+                text-align: center;
+            }
+
+            p {
+                text-align: center;
+                font-size: 18px;
+            }
+
+            button {
+                margin: 20px auto 0 !important; // Button center
+                width: 100%;
+                max-width: 320px;
+            }
+
+            .docImg {
+                margin-top: 30px;
+                max-width: 80% !important;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+    }
+
+    // Mobile (0px to 767px)
+    @media (max-width: 767px) {
+        margin-top: 50px;
+        padding-bottom: 50px;
+
+        .boxCta {
+            padding: 30px 20px 0px 20px; // Bottom padding 0 taake image niche touch kare
+            border-radius: 24px;
+
+            h2 {
+                font-size: 22px !important;
+                line-height: 30px !important;
+                margin-bottom: 15px !important;
+            }
+
+            p {
+                font-size: 15px;
+                line-height: 22px;
+            }
+
+            button {
+                font-size: 18px;
+                height: 55px;
+                width: 100%;
+                padding: 10px;
+            }
+
+            .docImg {
+                width: 100% !important;
+                margin-top: 20px;
+            }
+        }
+    }
+}

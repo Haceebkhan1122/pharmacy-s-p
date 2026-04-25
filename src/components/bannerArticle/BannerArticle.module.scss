@@ -1,0 +1,191 @@
+
+.topBarBanner {
+    background: #1C352D;
+    box-shadow: 0 -4px 20px 0 rgba(195, 204, 216, 0.30);
+    backdrop-filter: blur(10px);
+    padding: 13px 0;
+
+    @media (min-width: 768px) and (max-width: 1100px) {
+        padding: 0px 0;
+    }
+
+    ul {
+        display: inline-flex;
+        gap: 10px;
+        align-items: center;
+        list-style: none;
+
+        @media (min-width: 0) and (max-width: 767px) {
+            padding: 0px 0;
+
+        }
+
+        li {
+            overflow: hidden;
+            color: #FFF;
+            text-overflow: ellipsis;
+            font-family: 'figtree-regular';
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+
+            @media (min-width: 0) and (max-width: 767px) {
+                font-size: 12px;
+                gap: 5px;
+
+                &:last-child {
+                    padding-right: 0;
+                }
+            }
+
+            svg {
+                margin-left: 10px;
+            }
+        }
+    }
+
+    li {
+        position: relative;
+        padding-right: 30px;
+
+        &::after {
+            content: "";
+            width: 8px;
+            display: block;
+            position: absolute;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            height: 20px;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='6' height='10' viewBox='0 0 6 10' fill='none'%3E%3Cpath d='M0.24375 0.244802C-0.08125 0.569802 -0.08125 1.0948 0.24375 1.4198L3.47708 4.65313L0.24375 7.88647C-0.08125 8.21147 -0.08125 8.73647 0.24375 9.06147C0.56875 9.38647 1.09375 9.38647 1.41875 9.06147L5.24375 5.23647C5.56875 4.91147 5.56875 4.38647 5.24375 4.06147L1.41875 0.236468C1.10208 -0.0801983 0.56875 -0.0801981 0.24375 0.244802Z' fill='white'/%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+
+        }
+    }
+
+    a {
+        color: #FFF !important;
+        font-family: 'figtree-medium';
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 120%;
+        letter-spacing: 0.2px;
+        text-decoration: none;
+    }
+}
+
+.articleBanner {
+    position: relative;
+    height: 450px;
+    // background-image: url(../../assets/images/png/threeWays.png);
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover;
+
+    @media(min-width:768px) and (max-width:1100px) {
+        background-position: left !important;
+        height: 290px;
+        background-size: cover !important;
+        background-position: bottom center !important;
+    }
+
+    @media(min-width:0px) and (max-width:767px) {
+        // background-image: url(../../assets/images/svg/bannerArticle.svg);
+        background-position: left !important;
+        height: 270px;
+        background-size: cover !important;
+
+
+    }
+
+    // &::after {
+    //     content: '';
+    //     width: 38%;
+    //     height: 164px;
+    //     flex-shrink: 0;
+    //     background: rgba(28, 53, 45, 0.65);
+    //     box-shadow: 0 -4px 20px 0 rgba(195, 204, 216, 0.30);
+    //     backdrop-filter: blur(10px);
+    //     position: absolute;
+    //     bottom: 0;
+    //     left: 0;
+    //     z-index: 9;
+
+    //     @media(min-width:768px) and (max-width:1100px) {
+    //         width: 55%;
+    //     }
+
+    //     @media (min-width: 0) and (max-width: 767px) {
+    //         width: 70%;
+    //         height: 109px;
+    //     }
+
+    // }
+
+    .articlebox {
+        gap: 24px;
+        margin-bottom: 34px;
+        z-index: 99;
+        position: relative;
+        height: 164px;
+        background: rgba(0, 0, 0, 0.65);
+        box-shadow: 0 -4px 20px 0 rgba(195, 204, 216, 0.30);
+        width: 40%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        backdrop-filter: blur(10px);
+        left: -9%;
+        position: relative;
+        bottom: -33px;
+
+        @media (min-width: 0) and (max-width: 767px) {
+            gap: 14px;
+
+        }
+
+        .boxRightt {
+            p {
+                color: #FFF;
+                font-family: "Figtree-Light";
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 143.023%;
+
+                @media (min-width: 0) and (max-width: 767px) {
+                    font-size: 14px;
+
+
+                }
+
+                span {
+                    font-family: "Figtree-Bold";
+                    display: block;
+
+                }
+            }
+        }
+
+        .boxLeft {
+            border-radius: 100px;
+            width: 88px;
+            height: 88px;
+            flex-shrink: 0;
+            border-radius: 100px;
+            overflow: hidden;
+
+            @media (min-width: 0) and (max-width: 767px) {
+                width: 40px;
+                height: 40px;
+            }
+
+        }
+    }
+}
+

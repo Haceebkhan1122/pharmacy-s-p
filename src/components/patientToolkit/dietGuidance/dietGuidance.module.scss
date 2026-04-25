@@ -1,0 +1,440 @@
+.DietGuidance {
+    padding-top: 50px;
+    width: 100%;
+    height: 100%;
+    margin-top: 40px ;
+
+    h1 {
+        color: #000;
+        text-align: center;
+        font-family: 'inter-regular';
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin-bottom: 20px !important;
+    }
+
+    img {
+        height: 90%;
+        margin: auto;
+    }
+
+    .title {
+        font-weight: 700;
+        color: #333;
+    }
+
+    .subtitle {
+    color: #000;
+        text-align: center;
+        font-family: 'inter-regular';
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+        margin-top: 20px !important;
+        margin-bottom: 50px !important;
+    }
+
+    .guidanceCard {
+        border-radius: 30px;
+        border: 1px solid #78A941;;
+        display: flex;
+        width: 100%;
+        height: 385px;
+        padding: 30px;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        flex-shrink: 0;
+
+        .iconWrapper {
+            font-size: 2rem;
+            color: #0077b6;
+        }
+
+        .cardTitle {
+            color: #000;
+            text-align: center;
+            font-family: 'inter-regular-medium';
+            font-size: 26px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+        }
+
+        .cardBody {
+                color: #000;
+                font-family: 'inter-regular';
+                text-align: center;
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+        }
+    }
+
+    .downloadBtn {
+        background-color: #0071b2;
+        border: none;
+        padding: 12px 30px;
+        border-radius: 8px;
+        font-weight: 600;
+        display: inline-flex;
+        align-items: center;
+
+        &:hover {
+            background-color: #005a8e;
+        }
+    }
+
+
+    .tabContainer {
+        display: flex;
+        justify-content: center;
+        background: #fff;
+        border: 1px solid #77AA42; // Bright blue border
+        border-radius: 50px;
+        padding: 6px;
+        max-width: fit-content;
+        margin: 0 auto 50px;
+
+        :global(.nav-pills) {
+            gap: 5px;
+        }
+
+        .dayLink {
+            color: #333;
+            border-radius: 50px;
+            font-family: 'inter-regular', sans-serif;
+            font-size: 18px;
+            padding: 10px 25px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+
+            &:global(.active) {
+                color: #fff;
+
+                border-radius: 24px;
+                    background-color: #77AA42;
+                    color: #FFF;
+                        text-align: center;
+                        font-family: 'inter-bold';
+                        font-size: 20px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: var(--item-spacing-s, 24px);
+                        /* 120% */
+            }
+
+            &:hover:not(:global(.active)) {
+                background-color: rgba(0, 174, 239, 0.1);
+            }
+        }
+    }
+
+    .mealCard {
+        background: #fff;
+        border-radius: 40px; // Rounded corners from image
+        overflow: hidden;
+        height: 100%;
+        border: 1px solid #77AA42;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+
+        .mealHeader {
+                height: 54px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+    border-radius: 40px 40px 0 0;
+        border: 0.3px solid #DEE6D9;
+    
+        background: #77AA42;
+            color: #FFF;
+                text-align: center;
+                font-family: 'inter-regular-medium';
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: var(--item-spacing-s, 24px);
+                /* 100% */
+        }
+
+        .mealBody {
+            padding: 30px 20px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+                justify-content: space-between;
+
+            .mealTitle {
+            color: #000;
+                text-align: center;
+                font-family: 'inter-regular';
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: var(--item-spacing-s, 24px);
+                /* 100% */
+            }
+
+            .mealDesc {
+                color: #000;
+                    text-align: center;
+                    font-family: 'inter-regular';
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 300;
+                    line-height: var(--item-spacing-s, 24px);
+                    /* 120% */
+            }
+
+            .mealMacros {
+            color: #000;
+                text-align: center;
+                font-family: 'inter-regular';
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: 24px;
+                /* 133.333% */
+            }
+        }
+    }
+
+    .patientDownload {
+        color: #FFF;
+        font-family: 'inter-regular';
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        display: flex;
+        height: 60px;
+        padding: 13px 40px !important;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        border-radius: 10px !important;
+        background: #78A941;
+        border: none;
+        outline: none;
+        margin: auto;
+        cursor: pointer;
+        transition: background-color 0.5s ease, color 0.5s ease;
+        border: 0.5px solid #78A941;
+
+        &:hover {
+        background-color: #fff;
+        color: #78A941;
+        }
+
+        svg {
+            width: 32px;
+            height: 32px;
+
+        }
+
+    }
+}
+
+
+.compoDays {
+    background: #EBF3FB;;
+    margin: 60px 0px;
+    padding:  60px 0px;
+}
+
+
+
+
+
+/* --- RESPONSIVE MEDIA QUERIES --- */
+
+// 1. LAPTOP & LARGE SCREENS (Upto 1920px)
+@media screen and (max-width: 1920px) {
+    .DietGuidance {
+        .guidanceCard {
+            height: 400px; // Laptop par spacing maintain karne ke liye thodi height barhayi
+        }
+    }
+}
+
+// 2. LARGE TABLETS & iPAD PRO (1024px and above)
+@media screen and (min-width: 1025px) and (max-width: 1366px) {
+    .DietGuidance {
+        h1 {
+            font-size: 42px;
+        }
+
+        img {
+            width: 100%;
+        }
+
+        .subtitle {
+            font-size: 26px;
+        }
+
+        .guidanceCard {
+            height: 420px;
+            padding: 25px;
+
+            .cardTitle {
+                font-size: 24px;
+            }
+
+            .cardBody {
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+// 3. TABLET & iPAD MINI (769px to 1024px)
+@media screen and (max-width: 1024px) {
+    .DietGuidance {
+        h1 {
+            font-size: 36px;
+        }
+
+        .subtitle {
+            font-size: 22px;
+            margin-bottom: 40px !important;
+        }
+
+        .guidanceCard {
+            height: auto; // Content ke mutabiq adjust hoga
+            min-height: 380px;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        .mealCard {
+            .mealHeader {
+                font-size: 20px;
+            }
+
+            .mealBody {
+                .mealTitle {
+                    font-size: 20px;
+                }
+
+                .mealDesc {
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}
+
+// 4. MOBILE VIEW (0 to 768px)
+@media screen and (max-width: 768px) {
+    .DietGuidance {
+        padding-top: 30px;
+        margin-top: 20px;
+
+        h1 {
+            font-size: 28px;
+            padding: 0 15px;
+        }
+
+        .subtitle {
+            font-size: 18px;
+            padding: 0 10px;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+
+        .guidanceCard {
+            height: auto;
+            min-height: unset;
+            padding: 20px;
+            gap: 15px;
+
+            .cardTitle {
+                font-size: 20px;
+            }
+
+            .cardBody {
+                font-size: 16px;
+            }
+        }
+
+        .tabContainer {
+            max-width: 100%;
+            overflow-x: auto; // Mobile horizontal scroll
+            justify-content: flex-start;
+            white-space: nowrap;
+            border-radius: 25px;
+            padding: 4px;
+            margin-bottom: 30px;
+
+            .dayLink {
+                padding: 8px 15px;
+                font-size: 14px;
+                flex-shrink: 0;
+
+                &:global(.active) {
+                    font-size: 16px;
+                }
+            }
+        }
+
+        .mealCard {
+            margin-bottom: 15px;
+
+            .mealHeader {
+                font-size: 16px;
+                height: 45px;
+            }
+
+            .mealBody {
+                padding: 15px;
+                gap: 8px;
+
+                .mealTitle {
+                    font-size: 16px;
+                }
+
+                .mealDesc {
+                    font-size: 14px;
+                }
+
+                .mealMacros {
+                    font-size: 13px;
+                }
+            }
+        }
+
+        .patientDownload {
+            width: 90%;
+            font-size: 18px;
+            height: 55px;
+            padding: 10px 20px !important;
+
+            span {
+                width: 24px;
+                height: 24px;
+            }
+        }
+    }
+
+    .compoDays {
+        margin: 30px 0px;
+        padding: 40px 10px;
+    }
+}
+
+

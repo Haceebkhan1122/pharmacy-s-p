@@ -1,0 +1,94 @@
+.FaqSemoEverything {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .FaqSemoEverythingBoxx {
+        // width: 70%;
+
+        @media (min-width: 0px) and (max-width : 768px) {
+            // width: 92%;
+        }
+
+        h2 {
+            color: #000;
+            font-family: "inter-regular" !important;
+            font-size: 40px !important;
+            font-style: normal;
+            font-weight: 400 !important;
+            line-height: 55px;
+            text-align: left !important;
+            margin-bottom: 12px !important;
+
+            @media (min-width: 0px) and (max-width : 768px) {
+                font-size: 28px !important;
+                line-height: 40px !important;
+                text-align: center !important;
+            }
+        }
+
+        .accordianCustom {
+
+            .accordion-item {
+                border-radius: 20px !important;
+
+                button {
+                    // border-radius: 20px;
+                    // background: linear-gradient(180deg, rgba(89, 173, 237, 0.20) 0%, rgba(89, 173, 237, 0.00) 100%) !important;
+                    // backdrop-filter: blur(10px) !important;
+                }
+            }
+
+            .accordianCustomBody {
+
+                line-height: normal;
+                color: #000 !important;
+                font-family: 'inter-regular';
+                font-size: 22px;
+                line-height: normal;
+                padding: 20px 0;
+
+                @media(min-width:1301px) and (max-width:1919px) {
+                    font-size: 20px;
+                }
+
+                @media(min-width:0px) and (max-width:767px) {
+                    font-size: 16px;
+                }
+
+                ul {
+                    li {
+                        margin-top: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+:global(.urdu) .FaqSemoEverything {
+
+    p {
+        font-family: 'Jameel Noori Nastaleeq' !important;
+
+    }
+
+    h2 {
+        font-family: 'Jameel Noori Nastaleeq' !important;
+
+    }
+
+    .FaqSemoEverythingHeading {
+        text-align: right !important;
+    }
+}
+
+:global(.urdu) {
+    .accordianCustomBody {
+        padding-right: 15px !important;
+        text-align: right;
+        font-family: 'Jameel Noori Nastaleeq' !important;
+        direction: rtl;
+    }
+}

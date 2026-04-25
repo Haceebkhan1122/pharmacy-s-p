@@ -1,0 +1,230 @@
+.topBar {
+    width: 100%;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+
+    .topBarArea {
+        display: flex;
+        justify-content: end;
+        gap: 60px;
+        height: 42px;
+        border-radius: 0 0 0 40px;
+        background: #000;
+        align-items: center;
+        padding: 0 50px;
+        width: 620px;
+        margin-left: auto;
+        margin-right: -60px;
+
+        @media (max-width : 768px) {
+            width: 100%;
+            margin-left: unset;
+            margin-right: unset;
+            padding: 0px;
+        }
+
+
+        @media (max-width: 768px) {
+            width: 100%;
+            margin-left: unset;
+            margin-right: unset;
+            padding: 0px;
+        }
+
+        .topNav {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            white-space: nowrap;
+            padding-right: 32px;
+
+            @media (max-width: 768px) {
+                display: flex !important;
+                padding-right: 0px;
+            }
+
+            a {
+                color: #fff;
+                text-decoration: none;
+                font-size: 14px;
+                margin-left: 20px;
+                border-right: 1px solid #fff;
+                padding-right: 20px;
+
+                @media (max-width: 767px) {
+                    font-size: 10px;
+                    margin-left: 5px;
+                    padding-right: 5px;
+                }
+
+                &:last-child {
+                    border: none;
+                }
+            }
+        }
+    }
+
+    .wrapeWithLogo {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+        background: #fff;
+        height: 60px;
+        border-bottom: 1px solid #eee;
+
+        .logoMobile {
+            height: 40px;
+            width: auto;
+        }
+    }
+
+    .containerAllLinks {
+        height: 80px;
+        display: flex;
+        align-items: center;
+
+        .logoImgg {
+            width: 180px;
+            height: auto;
+            position: absolute;
+            top: 20px;
+        }
+    }
+
+    .headerLink {
+        display: flex;
+        justify-content: flex-end;
+        gap: 25px;
+        align-items: center;
+
+        a {
+            text-decoration: none;
+            color: #222;
+            font-size: 16px;
+            white-space: nowrap;
+
+            &.activeNavv {
+                color: #fff !important;
+                background: #78A941;
+                padding: 5px 15px;
+                border-radius: 0 15px;
+            }
+        }
+    }
+
+    // Mobile Menu Styling
+    .headerLinkMobilee {
+        position: absolute;
+        width: 100%;
+        background: #ebf3fb;
+        top: 28px; // Height of topNav + wrapeWithLogo
+        left: 0;
+        transform: translateY(-120%);
+        transition: 0.4s ease-in-out;
+        z-index: -1;
+        padding: 30px;
+
+        &.headerLinkMobileeActive {
+            transform: translateY(0);
+        }
+
+        .linkWrape {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            a {
+                text-decoration: none;
+                color: #222;
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+// Global/Helper Classes
+
+.dropdownSemo button::after {
+    color: #222 !important;
+    margin-left: 6px;
+}
+
+.dropdownSemo {
+    margin-left: 15px;
+
+    .button {
+        &::after {
+            @media (max-width : 768px) {
+                color: #222;
+            }
+        }
+    }
+
+    span {
+        @media (max-width : 768px) {
+            color: #222;
+        }
+    }
+
+    button {
+        background: transparent !important;
+        border: 1px solid #ccc !important;
+        color: #fff !important;
+        font-size: 12px !important;
+        padding: 2px 10px !important;
+    }
+}
+
+.wrapeMenu {
+    cursor: pointer;
+    margin-left: 15px;
+}
+
+.svgMenu,
+.crossSvg {
+    display: block;
+    width: 24px;
+    height: 24px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.svgMenu {
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4 6H20M4 12H20M4 18H20' stroke='%23000' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E");
+}
+
+.crossSvg {
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M18 6L6 18M6 6L18 18' stroke='%23000' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E");
+}
+
+
+
+.topNav {
+    @media (max-width : 768px) {
+        display: none !important;
+    }
+}
+
+
+
+    .uanNumber {
+      color: #fff !important;
+      text-align: center;
+      font-family: "Inter", sans-serif;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      letter-spacing: -0.5px;
+      position: relative;
+      padding-inline: 20px;
+
+      @media (min-width: 0) and (max-width: 767px) {
+        font-size: 10px;
+        padding-inline: 5px;
+      }
+    }
